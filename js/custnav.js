@@ -31,8 +31,11 @@ window.onload = function() {
             count++;
             var cnv = document.getElementById("particle-canvas");
             var gif = document.getElementById("gif");
+            var data = document.getElementById("data");
             cnv.style.display = "none";
             gif.classList.add("show");
+            data.classList.add("show");
+
         }
     }
     
