@@ -1,0 +1,579 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+    /* background: black; */
+    /* background: url("../img/Home/balloons1.jpg"); */
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: top center;
+    /* background-size: 100%; */
+    z-index: -1;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+#r1,
+#r2 {
+    visibility: hidden;
+}
+
+.bg-image-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: top center;
+    background-size: 100%;
+    z-index: -1;
+}
+
+.scene {
+    position: relative;
+    /* width: 1018px;
+    height: 563px; */
+    width: 978px;
+    height: 543px;
+    margin: 30px auto 80px;
+    perspective: 1000px;
+}
+
+.carousel {
+    width: 100%;
+    /* height: 100%; */
+    padding-bottom: 56.25%;
+    position: absolute;
+    transform: translateZ(-881.6px);
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.carousel__cell {
+    position: absolute;
+    width: 958px;
+    /* height: 550px; */
+    height: 0;
+    padding-top: calc(550 / 998 * 100%);
+    left: 10px;
+    top: 10px;
+    border: 2px solid black;
+    line-height: 116px;
+    font-size: 25px;
+    /* font-weight: bold; */
+    font-family: 'Gupter', serif;
+    color: white;
+    text-align: center;
+    transition: transform 1s, opacity 1s;
+}
+
+@media only screen and (max-width:1440px) {
+    .scene {
+        width: 898px;
+        height: 543px;
+    }
+    .carousel__cell {
+        width: 878px;
+    }
+    /* body .bg-image-fixed {
+            background: url("../img/Home/background1440.jpg");
+        } */
+}
+
+@media only screen and (max-width:1370px) {
+    .scene {
+        width: 858px;
+        height: 543px;
+    }
+    .carousel__cell {
+        width: 838px;
+        background-size: cover;
+        /* background-size: contain; */
+        background-position: center;
+    }
+    /* body .bg-image-fixed {
+            background: url(background1370.jpg);
+        } */
+}
+
+@media only screen and (max-width:767px) {
+    .scene {
+        width: 458px;
+        height: 353px;
+        /* background-size: contain; */
+    }
+    .carousel__cell {
+        width: 438px;
+    }
+    .carousel__cell:nth-child(9n+4) {
+        /* background: hsla(120, 100%, 50%, 0.8); */
+        background: url("../img/Carousel/Speaker767.jpg")
+    }
+    /* body .bg-image-fixed {
+            background: url(background767.jpg);
+        } */
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    .bg-image-fixed body {
+        background: url("../img/Home/background767.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .carousel__cell:nth-child(9n+1) {
+        background: url("../img/Carousel/Theme.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .carousel__cell:nth-child(9n+2) {
+        background: url("../img/Carousel/AmitTrivedi.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .carousel__cell:nth-child(9n+3) {
+        background: url("../img/Carousel/Euphoria.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .carousel__cell:nth-child(9n+4) {
+        /* background: hsla(120, 100%, 50%, 0.8); */
+        background: url("../img/Carousel/Events.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .carousel__cell:nth-child(9n+5) {
+        background: url("../img/Carousel/Speaker767.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .carousel__cell:nth-child(9n+6) {
+        background: url("../img/Carousel/Artists.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .carousel__cell:nth-child(9n+7) {
+        background: url("../img/Carousel/About.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width: 1370px) and (orientation: portrait) {
+    .bg-image-fixed body {
+        /* background-size: 170%; */
+        background: url("../img/Home/background1370.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.carousel__cell:nth-child(9n+1) {
+    background: url("../img/Carousel/Theme.jpg");
+}
+
+.carousel__cell:nth-child(9n+2) {
+    background: url("../img/Carousel/AmitTrivedi.jpg");
+}
+
+.carousel__cell:nth-child(9n+3) {
+    background: url("../img/Carousel/Euphoria.jpg");
+}
+
+.carousel__cell:nth-child(9n+4) {
+    /* background: hsla(120, 100%, 50%, 0.8); */
+    background: url("../img/Carousel/Events.jpg");
+}
+
+.carousel__cell:nth-child(9n+5) {
+    background: url("../img/Carousel/Speaker.jpg");
+}
+
+.carousel__cell:nth-child(9n+6) {
+    background: url("../img/Carousel/Artists.jpg");
+}
+
+.carousel__cell:nth-child(9n+7) {
+    background: url("../img/Carousel/About.jpg");
+}
+
+.carousel__cell:nth-child(9n+8) {
+    background: hsla(280, 100%, 50%, 0.8);
+}
+
+.carousel__cell:nth-child(9n+0) {
+    background: hsla(320, 100%, 50%, 0.8);
+}
+
+.carousel__cell:nth-child(1) {
+    transform: rotateY(0deg) translateZ(881.6px);
+}
+
+.carousel__cell:nth-child(2) {
+    transform: rotateY(60deg) translateZ(881.6px);
+}
+
+.carousel__cell:nth-child(3) {
+    transform: rotateY(120deg) translateZ(881.6px);
+}
+
+.carousel__cell:nth-child(4) {
+    transform: rotateY(180deg) translateZ(881.6px);
+}
+
+.carousel__cell:nth-child(5) {
+    transform: rotateY(240deg) translateZ(881.6px);
+}
+
+.carousel__cell:nth-child(6) {
+    transform: rotateY(300deg) translateZ(881.6px);
+}
+
+
+/* .carousel-options {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    background: hsla(0, 0%, 0%, 0.8);
+} */
+
+.logo {
+    width: 990px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    /* display: inline-block; */
+    /* display: inline-block; */
+}
+.description {
+    font-size: 40px;
+    color: white;
+    padding: 50px;
+}
+
+.description > b{
+    font-size: 32px;
+    color: #44A0C7;
+}
+
+#particle-canvas {
+    transition: visibility 2s linear 300ms, opacity 300ms;
+}
+
+#gif {
+    opacity: 0;
+}
+#gif.show {
+    opacity: 1;
+    transition: opacity 4s ease-out;
+}
+
+.gif {
+    width: 208px;
+    /* width of container */
+    height: 97px;
+    /* height of container */
+    object-fit: cover;
+    /* border: 5px solid black; */
+}
+
+.twitter {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    padding: 14px;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+.twitter:hover {
+    color: #FF7D6D;
+    text-decoration: none;
+}
+
+span {
+    font-style: italic;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* Floating Social Media Bar Style Starts Here */
+
+.fl-fl {
+    background: #9e0601;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    padding: 4px;
+    width: 220px;
+    position: fixed;
+    right: -175px;
+    z-index: 1000;
+    font: normal bold 10px;
+    font-family: 'Gupter', serif;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+.fa {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 0;
+    width: 40px;
+    margin-left: 8px;
+}
+
+.fl-fl:hover {
+    right: 0;
+}
+
+.fl-fl a {
+    color: #fff !important;
+    text-decoration: none;
+    text-align: left;
+    line-height: 43px!important;
+    vertical-align: top!important;
+}
+
+.float-fb {
+    top: 160px;
+}
+
+.float-tw {
+    top: 215px;
+}
+
+.float-gp {
+    top: 270px;
+}
+
+.float-rs {
+    top: 325px;
+}
+
+.float-ig {
+    top: 380px;
+}
+
+.float-pn {
+    top: 435px;
+}
+
+
+/* Floating Social Media Bar Style Ends Here */
+
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+    14.3% {
+        left: 0%;
+    }
+    28.6% {
+        left: -100%;
+    }
+    42.9% {
+        left: -100%;
+    }
+    57.2% {
+        left: -200%;
+    }
+    71.5% {
+        left: -200%;
+    }
+    85.8% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+
+/* body { margin: 0; }  */
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    .bg-image-fixed,
+    body {
+        background: url("../img/Home/background767.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .carousel__cell:nth-child(9n+1) {
+        /* background: url("../img/Carousel/Theme.jpg"); */
+        background: url("../img/Carousel/Theme.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .carousel__cell:nth-child(9n+2) {
+        background: url("../img/Carousel/AmitTrivedi.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .carousel__cell:nth-child(9n+3) {
+        background: url("../img/Carousel/Euphoria.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .carousel__cell:nth-child(9n+4) {
+        /* background: hsla(120, 100%, 50%, 0.8); */
+        background: url("../img/Carousel/Events.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .carousel__cell:nth-child(9n+5) {
+        background: url("../img/Carousel/Speaker767.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .carousel__cell:nth-child(9n+6) {
+        background: url("../img/Carousel/Artists.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .carousel__cell:nth-child(9n+7) {
+        background: url("../img/Carousel/About.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width: 420px) and (orientation: portrait) {
+    .bg-image-fixed,
+    body {
+        background: url("../img/Home/background400.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .carousel__cell:nth-child(9n+1) {
+        /* background: url("../img/Carousel/Theme.jpg"); */
+        background: url("../img/Carousel/Theme400.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .carousel__cell:nth-child(9n+2) {
+        background: url("../img/Carousel/AmitTrivedi400.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .carousel__cell:nth-child(9n+3) {
+        background: url("../img/Carousel/Euphoria400.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .carousel__cell:nth-child(9n+4) {
+        /* background: hsla(120, 100%, 50%, 0.8); */
+        background: url("../img/Carousel/Events400.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .carousel__cell:nth-child(9n+5) {
+        background: url("../img/Carousel/Speaker400.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .carousel__cell:nth-child(9n+6) {
+        background: url("../img/Carousel/Artists400.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .carousel__cell:nth-child(9n+7) {
+        background: url("../img/Carousel/About400.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.section-landing {
+    font-family: sans-serif;
+    text-align: center;
+    background: black;
+    /* background: url("../img/.jpg"); */
+
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: top center;
+    /* background-size: 100%; */
+    z-index: -1;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+
+}
+
+
+/* Know more button */
+.round-button {
+	box-sizing: border-box;
+	display:block;
+	width:80px;
+	height:80px;
+	padding-top: 5px;
+	padding-left: 4px;
+	line-height: 20px;
+	border: 6px solid #fff;
+	border-radius: 50%;
+	color:#f5f5f5;
+	text-align:center;
+	text-decoration:none;
+	background-color: rgba(0,0,0,0.5);
+	font-size:20px;
+	font-weight:bold;
+	transition: all 0.3s ease;
+}
+.round-button:hover {
+	background-color: rgba(0,0,0,0.8);
+	box-shadow: 0px 0px 10px rgba(255,255,100,1);
+	text-shadow: 0px 0px 10px rgba(255,255,100,1);
+}
+
+.fa-play {
+    color: #F6911B;
+}
