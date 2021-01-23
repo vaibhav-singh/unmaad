@@ -398,3 +398,17 @@ nav.active .link-5 {
         left: 4px;
     }
 }
+
+
+.modal-dialog {
+    width: 100%!important;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .modal-content {
+    height: auto;
+    min-height: 100%;
+    border-radius: 0;
+  }

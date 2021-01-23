@@ -256,6 +256,7 @@ body {
     width: 990px;
     text-align: center;
     font-family: 'Rubik', sans-serif;
+    
     /* display: inline-block; */
     /* display: inline-block; */
 }
@@ -284,8 +285,10 @@ body {
 }
 
 #gif {
-    opacity: 0;
-    line-height: 100vh;
+    /* opacity: 0; */
+    /* line-height: 100vh; */
+    display: flex;
+    align-items: center;
 }
 #gif.show {
     opacity: 1;

@@ -27,16 +27,16 @@ window.onload = function() {
     // Set time to live of Particle to20 frames.
     ptl.ttl = null;
     ps.onNextSlide = function () {
-        if (count==0) {
-            count++;
-            var cnv = document.getElementById("particle-canvas");
-            var gif = document.getElementById("gif");
-            var data = document.getElementById("data");
-            cnv.style.display = "none";
-            gif.classList.add("show");
-            data.classList.add("show");
+        // if (count==0) {
+        //     count++;
+        //     var cnv = document.getElementById("particle-canvas");
+        //     var gif = document.getElementById("gif");
+        //     var data = document.getElementById("data");
+        //     cnv.style.display = "none";
+        //     gif.classList.add("show");
+        //     data.classList.add("show");
 
-        }
+        // }
     }
     
     var timeout = null;
