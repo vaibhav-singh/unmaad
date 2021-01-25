@@ -38,6 +38,9 @@ window.onload = function() {
 
         // }
     }
+
+    
+
     
     var timeout = null;
     window.addEventListener('resize', function() {
