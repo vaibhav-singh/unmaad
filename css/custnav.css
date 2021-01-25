@@ -401,8 +401,8 @@ nav.active .link-5 {
 
 
 .modal-dialog {
-    width: 100%!important;
-    height: 100%;
+    width: 90%!important;
+    height: 90%;
     margin: 0;
     padding: 0;
   }
