@@ -263,7 +263,7 @@ body {
     font-size: 40px;
     color: white;
     padding: 50px;
-    font-family: 'Poppins', sans-serif;
+    font-family: bosk;
 }
 
 #data {
@@ -288,6 +288,7 @@ body {
     /* line-height: 100vh; */
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 #gif.show {
     opacity: 1;
@@ -597,10 +598,29 @@ img {
 .contact-us {
     font-size: 16px;
     font-style: normal;
+    font-family: 'Poppins', sans-serif;
 }
 
 @font-face {
     font-family: "bosk";
     src: url("Bosk.ttf.woff") format('woff');
     font-weight: bold;
+}
+
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
 }
