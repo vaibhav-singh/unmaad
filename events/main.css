@@ -1,5 +1,6 @@
 html{scroll-behavior:smooth;
-height: 100%;}
+height: 100%;
+background-color: black;}
 
 
 
@@ -14,6 +15,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 60%;
+    background-color: black;
+
 }
 .navbar {
     z-index: 2;
@@ -22,8 +25,9 @@ body {
 .heading {
     font-size: 2rem;
     font-weight: 700;
-    /* text-shadow: 5px 5px rgb(0 0 0 / 50%); */
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
 }
+
 
 .live-btn {
     background-color: #00D579;
@@ -45,6 +49,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    color: white;
 }
 
 .registration-btn {
@@ -72,6 +77,8 @@ body {
     width: 70px;
     border-radius: 5px;
     padding-bottom: 5px;
+    background-color: white;
+    color: black;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 .calendar-icon>div {
@@ -103,6 +110,7 @@ body {
 .main-section {
     min-height: 100vh;
 }
+
 
 .main-section > .details {
     min-height: 80vh;
@@ -202,8 +210,8 @@ transform: rotateY(180deg);
 .footer {
     padding: 20px;
     margin: -15px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 /*  */
