@@ -1,0 +1,19 @@
+﻿.p-5 {
+    padding: 3rem !important
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto
+}
+
+.rounded-circle {
+    border-radius: 50% !important
+}
+
+.display-4 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2
+}
+
