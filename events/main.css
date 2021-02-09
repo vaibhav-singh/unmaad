@@ -107,13 +107,17 @@ body {
    padding-bottom: 30px;
 }
 
+.category-nav {
+    height: 30vh;
+}
+
 .main-section {
     min-height: 100vh;
 }
 
 
 .main-section > .details {
-    min-height: 80vh;
+    min-height: 70vh;
 }
 
 .category-header {
@@ -123,10 +127,14 @@ body {
     color: #ffffff;
     text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;}
 
-.nav-category {
+.nav-container {
     width: 16%;
     text-align: center;
-    padding: 10px;
+}
+
+.nav-category {
+    text-align: center;
+    padding: 25px;
     text-decoration: none;
     color: inherit;
     background-color: white;
@@ -135,9 +143,9 @@ body {
 .nav-category:hover {
     text-decoration: none;
     color: inherit;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-    box-shadow: 0 8px 6px -6px black;
+    -webkit-box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+    -moz-box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
 }
 
 /* Flipcard styling */
@@ -270,3 +278,17 @@ a.registration-btn:hover,a.registration-btn:focus {
         margin-top: 25px;
     }
  }
+
+.neon {
+color: #fff;
+/* text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff; */
+margin-top: 30px;
+}
