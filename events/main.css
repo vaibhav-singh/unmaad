@@ -56,6 +56,8 @@ body {
     background-color: #FF2628;
     color: white;
     border-radius: 0%;
+    background-image:none;
+    -webkit-appearance: none!important;
 }
 
 .video-player {
@@ -291,4 +293,8 @@ color: #fff;
     0 0 100px #0ff,
     0 0 150px #0ff; */
 margin-top: 30px;
+}
+
+.fa-map-marker:before {
+    color: #FF5E5B;
 }
