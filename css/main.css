@@ -1,0 +1,375 @@
+body {
+    margin: 0;
+}
+.landing-wrapper {
+    background-image: url('../img/landing.png');
+    /* background-blend-mode: soft-light; */
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.clouds-1, .clouds-2, .clouds-3 {
+    z-index: 10;
+    position: fixed;
+    top: 30px;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.hotair {
+    z-index: 10;
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.clouds-1 > img {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    padding-left: 100%;
+    animation: cloud-anim 60s linear infinite;
+    animation-delay: 20s;
+    will-change: transform;
+}
+
+.clouds-2 > img {
+    position: relative;
+    display: inline-block;
+    width: 260px;
+    padding-left: 100%;
+    animation: cloud-anim 60s linear infinite;
+    animation-delay: -10s;
+    will-change: transform;
+}
+
+.clouds-3 > img {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    padding-left: 100%;
+    animation: cloud-anim 60s linear infinite;
+    animation-delay: -20s;
+    will-change: transform;
+}
+
+.hotair > img {
+    position: relative;
+    display: inline-block;
+    width: 100;
+    left: 80%;
+    transform-origin: 50% 0;
+    animation: swinging 10s ease-in-out forwards infinite;
+}
+
+.landing-logo {
+    width: 18%;
+    position: fixed;
+    left: 50%;
+    bottom: 43vh;
+    transform: translateX(-50%);
+    z-index: 12;
+    cursor: pointer;
+}
+
+
+@keyframes cloud-anim {
+    0% {
+    transform: translate(0);
+    }
+    100% {
+    transform: translate(-100%);
+    }
+}
+@keyframes blimp-anim {
+    0% {
+    transform: translate(0);
+    }
+    100% {
+    transform: translate(100%);
+    }
+}
+
+ 
+@keyframes swinging{
+    0%{transform: rotate(10deg);}
+    50%{transform: rotate(-5deg)}
+    100%{transform: rotate(10deg);}
+}
+
+.nav-arrow {
+    position: fixed;
+    z-index: 3;
+    cursor: pointer;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.nav-arrow > span{
+    z-index: 4000;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-56%);
+    position: absolute;
+    font-weight: bolder;
+}
+
+.nav-arrow > img{
+    width: 150px;
+}
+
+.nav-arrow > img:hover {
+    filter: drop-shadow(5px 5px 5px #FFD700);
+}
+
+.go-live-nav {
+    bottom: 17vh;
+    right: 28%;
+    color: whitesmoke;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;    
+}
+.sponsors-nav {
+    bottom: 30vh;
+    right: 28%;
+    color: purple;
+    
+}
+.events-nav {
+    bottom: 24vh;
+    left: 39%;
+    color: whitesmoke;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000; 
+}
+.proshows-nav {
+    bottom: 24vh;
+    right: 39%;
+    color: whitesmoke;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000; 
+}
+.schedule-nav {
+    bottom: 17vh;
+    left: 28%;
+    color: whitesmoke;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000; 
+}
+.about-us-nav {
+    bottom: 30vh;
+    left: 28%;
+    color: purple;
+
+}
+
+
+/* Polaroid */
+
+.polaroid {
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+
+}
+.polaroid > img{
+max-width: 100%;
+height: auto;
+}
+.caption {
+font-size: 1.8rem;
+text-align: center;
+line-height: 2em;
+}
+.item {
+width: 30%;
+display: inline-block;
+margin-top: 2rem;
+filter: grayscale(100%);
+}
+.item .polaroid:before {
+content: '';
+position: absolute;
+z-index: -1;
+transition: all 0.35s;
+}
+.item:nth-of-type(4n+1) {
+transform: scale(0.8, 0.8) rotate(5deg);
+transition: all 0.35s;
+}
+.item:nth-of-type(4n+1) .polaroid:before {
+transform: rotate(6deg);
+height: 20%;
+width: 47%;
+bottom: 30px;
+right: 12px;
+box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+.item:nth-of-type(4n+2) {
+transform: scale(0.8, 0.8) rotate(-5deg);
+transition: all 0.35s;
+}
+.item:nth-of-type(4n+2) .polaroid:before {
+transform: rotate(-6deg);
+height: 20%;
+width: 47%;
+bottom: 30px;
+left: 12px;
+box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+.item:nth-of-type(4n+4) {
+transform: scale(0.8, 0.8) rotate(3deg);
+transition: all 0.35s;
+}
+.item:nth-of-type(4n+4) .polaroid:before {
+transform: rotate(4deg);
+height: 20%;
+width: 47%;
+bottom: 30px;
+right: 12px;
+box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+}
+.item:nth-of-type(4n+3) {
+transform: scale(0.8, 0.8) rotate(-3deg);
+transition: all 0.35s;
+}
+.item:nth-of-type(4n+3) .polaroid:before {
+transform: rotate(-4deg);
+height: 20%;
+width: 47%;
+bottom: 30px;
+left: 12px;
+box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+}
+.item:hover {
+filter: none;
+transform: scale(1, 1) rotate(0deg) !important;
+transition: all 0.35s;
+}
+.item:hover .polaroid:before {
+content: '';
+position: absolute;
+z-index: -1;
+transform: rotate(0deg);
+height: 90%;
+width: 90%;
+bottom: 0%;
+right: 5%;
+box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+transition: all 0.35s;
+}
+
+
+.birds {
+    margin-left: 50px;
+}
+
+
+@media screen and (max-width: 950px) {
+    .landing-logo {
+        bottom: 45vh;
+        width: 25%;
+    }
+    .go-live-nav {
+        bottom: 12vh;
+        right: 54%;
+    }
+    .sponsors-nav {
+        bottom: 34vh;
+        right: 54%;
+    }
+    .events-nav {
+        bottom: 24vh;
+        left: 10%;
+    }
+    .schedule-nav {
+        bottom: 13vh;
+        left: 53%;
+    }
+    .about-us-nav {
+        bottom: 33vh;
+        left: 53%;
+    }
+    .proshows-nav {
+        bottom: 24vh;
+        right: 12%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .landing-logo {
+        bottom: 45vh;
+        width: 40%;
+    }
+    .go-live-nav {
+        bottom: 12vh;
+        right: 54%;
+    }
+    .sponsors-nav {
+        bottom: 34vh;
+        right: 54%;
+    }
+    .events-nav {
+        bottom: 22vh;
+        left: 5%;
+    }
+    .schedule-nav {
+        bottom: 13vh;
+        left: 53%;
+    }
+    .about-us-nav {
+        bottom: 33vh;
+        left: 53%;
+    }
+    .proshows-nav {
+        bottom: 22vh;
+        right: 5%;
+    }
+}
+
+/* iPad Pro media query */
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .landing-logo {
+        bottom: 45vh;
+        width: 40%;
+    }
+
+    .go-live-nav {
+        bottom: 12vh;
+        right: 70%;
+    }
+    .sponsors-nav {
+        bottom: 34vh;
+        right: 70%;
+    }
+    .events-nav {
+        bottom: 22vh;
+        left: 15%;
+    }
+    .schedule-nav {
+        bottom: 13vh;
+        left: 60%;
+    }
+    .about-us-nav {
+        bottom: 33vh;
+        left: 60%;
+    }
+    .proshows-nav {
+        bottom: 22vh;
+        right: 25%;
+    }
+
+}

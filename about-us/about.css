@@ -1,0 +1,239 @@
+.wrapper {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+    text-align: center;
+}
+
+.our-team, .about, .aftermovie {
+    height: 100vh;
+    overflow-y: scroll;
+    background: url('./img/sky.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about, .aftermovie {
+    position: relative;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.landing-about-us {
+    height: 100vh;
+    position: relative;
+}
+
+.caption {
+    font-family: 'Long Cang', cursive;
+}
+
+.h-team {
+
+  z-index: 10;
+  margin: 0;
+  color: whitesmoke;
+  padding: 20px;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 34px;
+  text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
+}
+
+.h-vertical {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 50px;
+    padding-top: 10px;
+    color: whitesmoke;
+    text-shadow: -1px -1px 0px #2196f3, 3px 3px 0px #2196f3, 6px 6px 0px #0d47a1;
+    margin-bottom: 0;
+}
+
+.landing-logo {
+    position: absolute;
+    width: 18%;
+    /* position: fixed; */
+    left: 50%;
+    bottom: 43%;
+    transform: translateX(-50%);
+    z-index: 12;
+    cursor: pointer;
+}
+
+.header {
+    text-align: right;
+    /* padding: 20px; */
+    padding: 20px 10%;
+    width: 80%;
+}
+
+.header > a {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 34px;
+    margin: 5px;
+    color: whitesmoke;
+    text-decoration: none;
+    text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
+}
+
+.header>a:hover {
+    text-decoration: none;
+    color: whitesmoke;
+    text-shadow: 5px 6px 10px rgba(81,67,21,0.8);
+}
+
+
+.description {
+    background-color: #fff;
+    padding: 3vw;
+    width: 34vw;
+    border-radius: 3vw;
+    position: absolute;
+    top: 5vw;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+    left: 10vw;
+    font-size: 16px;
+    color: #707070;
+    font-family: 'Roboto', sans-serif;}
+
+.unmaad-h-about,.unmaad-h-aftermovie {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 34px;
+    color: tomato;
+}
+.c-balloon {
+    height: 80vh;
+    right: 30vh;
+    top: 11vh;
+    position: absolute;
+    animation: swinging 10s ease-in-out forwards infinite;
+}
+
+.window-scene {
+    height: 70vh;
+    right: 0vh;
+    top: 20vh;
+    position: absolute;
+}
+
+.desc-aftermovie {
+    top: 2vw;
+    background-color: black;
+    padding: 3vw;
+    width: 70%;
+    border-radius: 3vw;
+    position: absolute;
+    /* top: 5vw; */
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 20%);
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 16px;
+    color: #707070;
+    font-family: 'Roboto', sans-serif;
+}
+
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-container > section {
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+}
+
+.flying-blimp {
+    z-index: 10;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+.flying-blimp > img {
+    position: relative;
+    display: inline-block;
+    animation: blimp-anim 20s linear infinite;
+    animation-delay: 1s;
+    will-change: transform;
+}
+
+@media screen and (max-width: 950px) {
+    .landing-logo {
+        bottom: 45vh;
+        width: 25%;
+    }
+
+    .description {
+        padding: 10%;
+        width: 80%;
+    }
+    .c-balloon {
+        display: none;
+    }
+    .desc-aftermovie {
+        top: 25%;
+    }
+    .item {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .landing-logo {
+        bottom: 45vh;
+        width: 40%;
+    }
+
+    .description {
+        padding: 10%;
+        width: 80%;
+    }
+
+    .c-balloon {
+        display: none;
+    }
+    .desc-aftermovie {
+        top: 25%;
+    }
+    .item {
+        width: 100%;
+    }
+}
+
+/* iPad Pro media query */
+
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .landing-logo {
+        bottom: 45vh;
+        width: 40%;
+    }
+
+    .description {
+        padding: 10%;
+        width: 80%;
+    }
+    .c-balloon {
+        display: none;
+    }
+    .desc-aftermovie {
+        top: 25%;
+    }
+    /* .item {
+        width: 100%;
+    } */
+
+}

@@ -13,88 +13,56 @@
     <meta name="description" content="Unmaad is the annual Cultural fest of IIM Bangalore. This year's theme is the 'Happiness Reloaded'">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet " href="css/carousel.css " />
-    <link rel="stylesheet " href="css/custnav.css " />
-    <link rel="stylesheet " href="css/particle.css " />
-
+    <link rel="stylesheet " href="css/main.css " />
+ 
     <link rel='icon' href='img/favicon.ico' type='image/x-icon' />
-    <link rel="stylesheet " href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css " />
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js "></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <script src="https://kit.fontawesome.com/1d0c60e990.js" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Paytone+One&display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.gstatic.com"> 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-    <script src="https://particleslider.com/js/particleslider/current/particleslider.js"></script>
-    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body id="particle-slider">
-    <div class="section-landing">
-        <div class="header-links">
-            <a href="events/index.html" target="_blank"><div class="events">Events</div></a>
-            <a href="2020/sponsors.html" target="_blank"><div class="sponsors">Unmaad 2020 - Sponsors</div></a>
+<body>
+    <div class="container-fluid landing-wrapper">
+        <div class="clouds-1">
+            <img src="./img/cloud1.png" width="160px"/>
         </div>
-        <div class="logo" id="gif">
-            <img src="img/Logo21/unmaadlogo.gif" style="margin-top: -100px;"/> 
+        <div class="clouds-2">
+            <img src="./img/cloud2.png" width="230px"/>
         </div>
-        <div id="data" class="show" style="position: fixed; bottom: 0;">
-            <div class="desc-container" style="display: flex;justify-content: center;align-items: center;">
-                <div class="description">
-                    <span class="event-date">March 05-07, 2021</span><b class="subheader">IIM-BANGALORE</b>
-                    <br><br><span class="contact-us">
-                        Follow us: 
-                        <a href="https://www.instagram.com/unmaad.iimb/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://twitter.com/UnmaadIIMB" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.facebook.com/unmaad.iimb" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.youtube.com/user/culcomiimb" target="_blank"><i class="fab fa-youtube"></i></a>
-                        <br>
-                        Reach out to us: <a href = "mailto: unmaad@iimb.ac.in">unmaad@iimb.ac.in</a>
-                        or <a href="tel:+91-9986958649">+91-9986958649</a>
-                        
-                    </span>
-                </div>
-                <a href="#" class="round-button launch-modal" data-modal-id="modal-video"><i class="fa fa-play fa-2x" style="margin-left: 4px;"></i></a>
-            </div> 
+        <div class="clouds-3">
+            <img src="./img/cloud1.png" width="60px"/>
         </div>
-        
-    </div>
-
-    </div>
-    <div class="modal fade" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="modal-video-label">
-        <div class="modal-dialog vertical-alignment-helper" role="document">
-            <div class="modal-content vertical-align-center">
-                <div class="modal-header">
-                    <button type="button" class="close" id="myModalBtn" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="modal-video">
-                        <div class="embed-responsive embed-responsive-16by9" id="myModal">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xD406lkKi_Y"
-                                    webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="hotair">
+            <img src="./img/hotair.png" width="100px"/>
+        </div>
+        <div class="birds">            
+            <img src="./img/birds.gif" width="300px"/>
         </div>
     </div>
-    <script src="js/carousel.js " async defer></script>
-    <script src="js/custnav.js "></script>
-    <script src="js/jquery-1.11.1.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/jquery.backstretch.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <script type="text/javascript">
-       $("#modal-video").on('hidden.bs.modal', function (e) {
-        $("#modal-video iframe").attr("src", $("#modal-video iframe").attr("src"));
-    });
-    </script>
+    <img class="landing-logo" src="./img/Logo21/LogoBright.png"/>
+    <a class="nav-arrow proshows-nav">
+        <img src="./img/arrow_left_2.png"/>
+        <span>WCF</span>
+    </a>
+    <a href="./about-us/about.html" class="nav-arrow about-us-nav">
+        <img src="./img/arrow_left_1.png"/>
+        <span>About Us</span>
+    </a>
+    <a class="nav-arrow schedule-nav">
+        <img src="./img/arrow_left_3.png"/>
+        <span>Schedule</span>
+    </a>
+    <a class="nav-arrow events-nav" href="./events/index.html">
+        <img src="./img/arrow_right_2.png"/>
+        <span>Events</span>
+    </a>
+    <a class="nav-arrow sponsors-nav">
+        <img src="./img/arrow_right_1.png"/>
+        <span>Sponsors</span>
+    </a>
+    <a class="nav-arrow go-live-nav">
+        <img src="./img/arrow_right_3.png"/>
+        <span>Go Live</span>
+    </a>
 </body>
 
 </html>
