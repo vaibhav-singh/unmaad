@@ -126,8 +126,9 @@ body {
     width: 150px;
 }
 
-.nav-arrow > img:hover {
-    filter: drop-shadow(5px 5px 5px #FFD700);
+
+.nav-arrow:hover > img {
+    filter: drop-shadow(5px 5px 5px #FFD700); */
 }
 
 .go-live-nav {
