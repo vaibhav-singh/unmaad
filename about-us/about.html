@@ -16,6 +16,7 @@
     <link rel="stylesheet " href="../css/main.css " />
     <link rel="stylesheet " href="./about.css " />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
     <link rel='icon' href='../img/favicon.ico' type='image/x-icon' />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
@@ -24,10 +25,7 @@
 </head>
 <body>
 <div class="scroll-container">
-<div>
-
-</div>
-<section class="landing-about-us">
+<section class="landing-about-us  section" id="home">
     <div class="container-fluid landing-wrapper">
         <!-- <header class="header">
             <a href="../index.html">Home</a>
@@ -40,8 +38,12 @@
     <div class="flying-blimp">
         <img src="../img/blimp.png" width="500px"/>
     </div>
+    <div class="scroll-nav">
+        <!-- <a href="#"><i class="fa fa-arrow-circle-o-up scroll-up" aria-hidden="true"></i></a> -->
+        <a href="#about"><i class="fa fa-arrow-circle-o-down  scroll-down" aria-hidden="true"></i></a>
+    </div>
 </section>
-<section class="about" id="about">
+<section class="about  section" id="about">
     <h2 class="text-center h-team"></h2>
     <div>
         <div class="description">
@@ -59,16 +61,24 @@
             <img class="c-balloon" src="./img/couple-balloon.png">
         </div>
     </div>
+    <div class="scroll-nav">
+        <a href="#home"><i class="fa fa-arrow-circle-o-up scroll-up" aria-hidden="true"></i></a>
+        <a href="#after-movie"><i class="fa fa-arrow-circle-o-down  scroll-down" aria-hidden="true"></i></a>
+    </div>
 </section>
-<section class="aftermovie" id="after-movie">
+<section class="aftermovie  section" id="after-movie">
     <div class="description desc-aftermovie">
         <div class="unmaad-h-aftermovie">Recap Unmaad'20</div>
         <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/c8cAN7owrZI" allowfullscreen></iframe>
             </div>
     </div>
+    <div class="scroll-nav">
+        <a href="#about"><i class="fa fa-arrow-circle-o-up scroll-up" aria-hidden="true"></i></a>
+        <a href="#team"><i class="fa fa-arrow-circle-o-down  scroll-down" aria-hidden="true"></i></a>
+    </div>
 </section>
-<section class="our-team" id="team">
+<section class="our-team section" id="team">
     <!-- <h2 class="text-center h-team">Our Team</h2> -->
     <h3 class="text-center h-vertical">Meet The Folks</h3>
     <div class="wrapper">
@@ -148,6 +158,10 @@
             </div>
         </div>
     </div>
+    <div class="scroll-nav scroll-custom">
+        <a href="#after-movie"><i class="fa fa-arrow-circle-o-up scroll-up" aria-hidden="true"></i></a>
+        <!-- <a href="#"><i class="fa fa-arrow-circle-o-down scroll-up" aria-hidden="true"></i></a> -->
+    </div>
     <footer>
         ©UNMAAD '21, IIM Bangalore - 560076
     </footer>
@@ -155,8 +169,10 @@
 
 </div>    
 
+<script src="https://use.fontawesome.com/eb6da44754.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
 </html>

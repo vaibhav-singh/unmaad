@@ -49,24 +49,28 @@
             <div class="item">
                 <div class="polaroid"><img src="./images/Footloose.JPG">
                     <div class="caption">Footloose</div>
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="footloose">Details</button>
                     <a class="btn btn-outline-danger" target="_blank" href="https://dare2compete.com/o/footloose-unmaad-2021-indian-institute-of-management-iim-bangalore-146651" role="button">Register</a>
                 </div>
             </div>
             <div class="item">
                 <div class="polaroid"><img src="./images/DuetDanzo.JPG">
                     <div class="caption">Duet Danza</div>
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="duet">Details</button>
                     <a class="btn btn-outline-danger" target="_blank" href="https://dare2compete.com/o/duet-danza-unmaad-2021-indian-institute-of-management-iim-bangalore-146657" role="button">Register</a>
                 </div>
             </div>
             <div class="item">
                 <div class="polaroid"><img src="./images/GetSetSolo.JPG">
                     <div class="caption">Get Set Solo</div>
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="getset">Details</button>
                     <a class="btn btn-outline-danger" target="_blank" href="https://dare2compete.com/o/get-set-solo-indian-institute-of-management-iim-bangalore-146659" role="button">Register</a>
                 </div>
             </div>
             <div class="item">
                 <div class="polaroid"><img src="./images/WOS.JPG">
                     <div class="caption">War of Superstars</div>
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="wos">Details</button>
                     <a class="btn btn-outline-danger" target="_blank" href="https://dare2compete.com/o/war-of-superstars-indian-institute-of-management-iim-bangalore-146665" role="button">Register</a>
                 </div>
             </div>
@@ -76,9 +80,143 @@
         ©UNMAAD '21, IIM Bangalore - 560076
     </footer>
 </section>
-
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Rules and Regulations</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+      </div>
+    </div>
+  </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+    $('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var data = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  console.log(data)
+  if(data=="footloose") {
+    modal.find('.modal-body').html(`<div _ngcontent-d2c-frontend-c148="" class="ng-tns-c148-11 blue-border d2c-container"><!----><!----><h2 _ngcontent-d2c-frontend-c148="" class="hdng ng-tns-c148-11 ng-star-inserted"> All that you need to know about  Footloose </h2><!----><!----><!----><!----><div _ngcontent-d2c-frontend-c148="" class="editor-text ng-tns-c148-11"><p>Every day brings a chance for you to draw in a breath, kick off your shoes, and dance. At Unmaad 2021, we welcome dance troops to channel their inner creativity and leave the audience awestruck with their sassiest moves.</p>
+    <p><strong>Rules:</strong></p>
+    <ol>
+    <li>The event comprises one round, and only one member per team needs to register.</li>
+    <li>Registrations will be accepted online through the website only. The last date to register is 20th February 2021.</li>
+    <li>Teams need to submit a video of their performance, which should not be older than four weeks. Disobeying this rule will lead to disqualification of the team.</li>
+    <li>All dance forms are welcomed.</li>
+    <li>Teams can use a creative measure like the Split screen to showcase the group effect in the video.</li>
+    <li>A minimum of 4 participants performing need to be on the screen at all times.</li>
+    <li>Special effects and visual gimmicks are not allowed in the video performance. Disobeying this rule will lead to disqualification of the team.</li>
+    <li>A team can have a minimum of 4 and a maximum of 25 members (including team members responsible for camera, sound, props, and video compilation). All team members must be from the same college/institution. Corporate teams are also allowed.</li>
+    <li>The time limit of the submitted video is 4 to 6 minutes (length of the music track). Exceeding the time limit will impose a penalty.</li>
+    <li>Teams will be judged on their Choreography, Creativity, Costumes, Energy, Execution, Synchronization and not on the video quality.</li>
+    <li>Teams need to upload their video entry onto Google Drive and share the open-access link of the same. Submit the Google Drive link in the registration form by 24nd February 2021</li>
+    <li>The video should be of the extension .MP4 and follow the naming convention: TeamName_EventName (Example: Zenith_Footloose)</li>
+    <li>Usage of props is allowed and must be arranged by the teams.</li>
+    <li>Plagiarism will not be appreciated and will be marked negatively.</li>
+    <li>The performance and song selection should be in cohesion with the integrity of the fest. The obscenity of any kind will not be tolerated and will lead to disqualification.</li>
+    <li>The decision of the judges will be final and binding. The organizing committee reserves the right to make changes to the rules, which will be informed to the registered team well before the submission deadline. Unmaad 2021 reserves the right to use the videos on social media (suitable credits will be given to the participants).</li>
+    </ol></div><!----><!----></div>`)
+  }
+  else if(data=="duet") {
+    modal.find('.modal-body').html(`<div _ngcontent-d2c-frontend-c146="" class="ng-tns-c146-2 blue-border d2c-container"><!----><!----><h2 _ngcontent-d2c-frontend-c146="" class="hdng ng-tns-c146-2 ng-star-inserted"> All that you need to know about  Duet Danza </h2><!----><!----><!----><!----><div _ngcontent-d2c-frontend-c146="" class="editor-text ng-tns-c146-2"><p>Do not let distance stop you from dancing with your favorite partner, for zealous dancers do not need a stage but just the right partner to showcase their mettle. At Unmaad, we welcome all dance mates to dazzle our screens with their chemistry and double energy.</p>
+<p><strong>Rules:</strong></p>
+<ol>
+<li>The event comprises one round, and only one member per team needs to register.</li>
+<li>The event is a duo dance competition, and there shouldn't be any extra person at any point during the performance. Team members may be from the same or different colleges. Corporate teams are also allowed.</li>
+<li>Both the team members should be present on the screen at all times.</li>
+<li>Registrations will be accepted online through the website only. The last date to register is 23th February 2021.</li>
+<li>Teams need to submit a video of their performance, which should not be older than four weeks. Disobeying this rule will lead to disqualification of the team.</li>
+<li>All dance forms are welcomed.</li>
+<li>Teams can use a creative measure like the Split screen to showcase the duet effect in the video.</li>
+<li>Special effects and visual gimmicks are not allowed in the video performance. Disobeying this rule will lead to disqualification of the team.</li>
+<li>The time limit of the submitted video is 2 to 3 minutes (length of the music track). Exceeding the time limit will impose a penalty.</li>
+<li>Teams will be judged on their Choreography, Creativity, Costumes, Energy, Execution, Synchronization and not on the video quality.</li>
+<li>Teams need to upload their video entry onto Google Drive and share the open-access link of the same. Submit the Google Drive link in the registration form by 24th February 2021.</li>
+<li>The video should be of the extension .MP4 and follow the naming convention: TeamName_EventName (Example: Zenith_DuetDanza)</li>
+<li>Usage of props is allowed and must be arranged by the teams. Teams can get the help of individuals to support sound, props, and camera if required.</li>
+<li>Plagiarism will not be appreciated and will be marked negatively.</li>
+<li>The performance and song selection should be in cohesion with the integrity of the fest. The obscenity of any kind will not be tolerated and will lead to disqualification.</li>
+<li>The decision of the judges will be final and binding. The organizing committee reserves the right to make changes to the rules, which will be informed to the registered team well before the submission deadline. Unmaad 2021 reserves the right to use the videos on social media (suitable credits will be given to the participants).</li>
+</ol></div><!----><!----></div>`)
+  }
+  else if (data=="getset") {
+    modal.find('.modal-body').html(`<div _ngcontent-d2c-frontend-c218="" class="ng-tns-c218-4 blue-border d2c-container"><!----><!----><h2 _ngcontent-d2c-frontend-c218="" class="hdng ng-tns-c218-4 ng-star-inserted"> All that you need to know about  Get Set Solo </h2><!----><!----><!----><!----><div _ngcontent-d2c-frontend-c218="" class="editor-text ng-tns-c218-4"><p>Dancing is so much more than just grooving to a rhythm. Think your moves are better than the rest? Unmaad 2021 gives you a platform to rise to glory and set our screens on fire.</p>
+<p><strong>General Rules:</strong></p>
+<ol>
+<li>This is a solo dance competition and will take place in 3 rounds. All dance forms are welcome. Please refer to the Rounds tab for more information and scoring criteria.</li>
+<li>Participants have to record videos of themselves performing, which should not be older than four weeks. Disobeying this rule will lead to disqualification of the participant.</li>
+<li>Participants must record the videos without any pauses (the whole video should be recorded at one time and not in parts).</li>
+<li>Only audio editing is allowed if necessary. NO video editing is permitted; if any such editing is detected, participants will be disqualified.</li>
+<li>Registrations will be accepted online through the website only. The last date to register is 12th February 2021.</li>
+<li>Participants will be judged on their Choreography, Creativity, Costumes, Energy, Execution, Expressions, and not on the video quality.</li>
+<li>Participants need to upload their video entry onto Google Drive and share the open-access link of the same.</li>
+<li>The video should be of the extension .MP4 and follow the naming convention: Name_EventName_RoundNumber (Example: Monica_GetSetSolo_Round1)</li>
+<li>Participants can get the help of individuals to support sound, props, and camera if required.</li>
+<li>Plagiarism will not be appreciated and will be marked negatively.</li>
+<li>The performance and song selection should be in cohesion with the integrity of the fest. The obscenity of any kind will not be tolerated and will lead to disqualification.</li>
+<li>The decision of the judges will be final and binding. The organizing committee reserves the right to make changes to the rules, which will be informed to the registered team well before the submission deadline. Unmaad 2021 reserves the right to use the videos on social media (suitable credits will be given to the participants).</li>
+</ol>
+<p><strong>Round 1: Preliminary/Elimination (Online) Round -&nbsp;</strong><strong>Show me what you got!</strong></p>
+<ol>
+<li>Participants are free to put up a performance with their choice's music and dance style.</li>
+<li>Usage of props is not allowed in this round.</li>
+<li>The music could be a mashup of 1 or more songs.</li>
+<li>The time limit of the submitted video is 1 to 2 minutes (length of the music track). Exceeding the time limit will impose a penalty.</li>
+<li>Participants need to submit the Google Drive link in the registration form by 16th February 2021.</li>
+<li>Round Weightage: 45%</li>
+</ol>
+<p><strong>Round 2: Level Up</strong></p>
+<ol>
+<li>Participants qualifying in the 1st will be allocated a prop on a random basis. Information of the assigned prop will be sent on 17th February via email or WhatsApp.</li>
+<li>Usage of the assigned prop is mandatory, and requests for change in props will NOT be entertained.</li>
+<li>The time limit of the submitted video is 1 to 2 minutes (length of the music track). Exceeding the time limit will impose a penalty.</li>
+<li>Judges will score participants on their versatility, technique, creativity, and usage of the prop.</li>
+<li>Round Weightage: 45%</li>
+</ol>
+<p><strong>Round 3: Surprise Live Online Event/Challenge</strong></p>
+<ul>
+<li>Participants qualifying for Round 1 will automatically be eligible for this round as well.</li>
+</ul></div><!----><!----></div>`)
+  }
+  else {
+    modal.find('.modal-body').html(`<div _ngcontent-d2c-frontend-c218="" class="ng-tns-c218-2 blue-border d2c-container"><!----><!----><h2 _ngcontent-d2c-frontend-c218="" class="hdng ng-tns-c218-2 ng-star-inserted"> All that you need to know about  War Of Superstars </h2><!----><!----><!----><!----><div _ngcontent-d2c-frontend-c218="" class="editor-text ng-tns-c218-2"><p>At Unmaad, be the Superstars of our screens and charm us with the signature moves of your favorite artist.</p>
+<p><strong><span>General Rules</span></strong><span><strong>:</strong></span></p>
+<ol>
+<li><span>This is an individual event comprising of two rounds, and participation is allowed from any college or corporate institution.</span></li>
+<li><span>Registrations will be accepted online through the website only. The last date to register is 12th February 2021.</span></li>
+<li><span>Participants have to record a video of themselves while performing one Indiwood (Bollywood/ Tollywood/ Kollywood, etc.) movie star's style or dance.</span></li>
+<li><span>The choice of Indywood Star is the participant's decision.</span></li>
+<li><span>The recorded video should not be older than four weeks. Disobeying this rule will lead to disqualification of the participant.</span></li>
+<li><span>Participants must record the videos without any pauses (the whole video should be recorded at one time and not in parts).</span></li>
+<li><span>Only audio editing is allowed if necessary. NO video editing is permitted; if any such editing is detected, participants will be disqualified.</span></li>
+<li><span>Participants will be judged on their Choreography, Creativity, Costumes, Energy, Execution, Expressions, and not on the video quality.</span></li>
+<li><span>Participants need to upload their video entry onto Google Drive and share the open-access link of the same.</span></li>
+<li><span>The video should be of the extension .MP4 and follow the naming convention: Name_EventName (Example: Monica_WarOfSuperstars)</span></li>
+<li><span>Usage of props is allowed and must be arranged by the participants. Participants can get the help of individuals to support sound, props, and camera if required.</span></li>
+<li><span>The performance and song selection should be in cohesion with the integrity of the fest. The obscenity of any kind will not be tolerated and will lead to disqualification.</span></li>
+<li><span>The decision of the judges will be final and binding. The organizing committee reserves the right to make changes to the rules, which will be informed to the registered team well before the submission deadline. Unmaad 2021 reserves the right to use the videos on social media (suitable credits will be given to the participants).</span></li>
+</ol>
+<p>&nbsp;</p>
+<p><strong><span>Round Information:</span></strong></p>
+<ol>
+<li><span>The music could be a mashup of 1 or more songs.</span></li>
+<li><span>The time limit of the submitted video is 1.5 to 3 minutes (length of the music track). Exceeding the time limit will impose a penalty.</span></li>
+<li><span>Participants need to submit their Google Drive link directly to the Round 2 tabs.</span></li>
+<li><span>Participants need to submit the Google Drive link in the registration form by 24th February 2021.</span></li>
+</ol></div><!----><!----></div>`)
+  }
+})
+</script>
 </body>
 </html>

@@ -94,7 +94,8 @@
     left: 10vw;
     font-size: 16px;
     color: #707070;
-    font-family: 'Roboto', sans-serif;}
+    font-family: 'Roboto', sans-serif;
+}
 
 .unmaad-h-about,.unmaad-h-aftermovie {
     font-family: 'Luckiest Guy', cursive;
@@ -165,6 +166,28 @@ footer {
     animation: blimp-anim 20s linear infinite;
     animation-delay: 1s;
     will-change: transform;
+}
+
+.scroll-nav {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+}
+.scroll-nav > a > i {
+    display: block;
+    font-size: 3em;
+    margin: 3px;
+    color: tomato;
+    cursor: pointer;
+}
+.scroll-nav > a, .scroll-nav > a:hover{
+    text-decoration: none;
+}
+
+.scroll-custom {
+    position: relative;
+    text-align: right;
 }
 
 @media screen and (max-width: 950px) {

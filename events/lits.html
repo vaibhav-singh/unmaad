@@ -49,42 +49,56 @@
             <div class="item">
                 <div class="polaroid"><img src="./images/poetry.png">
                     <div class="caption">Kissa Kaviyon Ka</div>
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="kk">Details</button>
+
                     <a class="btn btn-outline-danger" target="_blank" href="https://dare2compete.com/o/kissa-kaviyon-ka-unmaad-2021-indian-institute-of-management-iim-bangalore-146634" role="button">Register</a>
                 </div>
             </div>
             <div class="item">
                 <div class="polaroid"><img src="./images/showdown.png">
                     <div class="caption">The Unmaad Showdown</div>
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="us">Details</button>
+
                     <a class="btn btn-outline-danger"  target="_blank" href="https://dare2compete.com/o/the-unmaad-showdown-unmaad-2021-indian-institute-of-management-iim-bangalore-146646" role="button">Register</a>
                 </div>
             </div>
             <div class="item">
                 <div class="polaroid"><img src="./images/spent.jpg">
                     <div class="caption">Sp-Entastic</div>
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="se">Details</button>
+
                     <a class="btn btn-outline-danger" target="_blank"  href="https://dare2compete.com/o/sp-entastic-unmaad-2021-indian-institute-of-management-iim-bangalore-146652" role="button">Register</a>
                 </div>
             </div>
             <div class="item">
                 <div class="polaroid"><img src="./images/jam.jpg">
                     <div class="caption">JAM</div>
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="jam">Details</button>
+
                     <a class="btn btn-outline-danger" target="_blank" href="https://dare2compete.com/o/jam-just-a-minute-unmaad-2021-indian-institute-of-management-iim-bangalore-146811" role="button">Register</a>
                 </div>
             </div>
             <div class="item">
                 <div class="polaroid"><img src="./images/wordsworth.jpg">
                     <div class="caption">WordsWorth</div>
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="ww">Details</button>
+
                     <a class="btn btn-outline-danger" target="_blank"  href="https://dare2compete.com/o/wordsworth-unmaad-2021-indian-institute-of-management-iim-bangalore-146655" role="button">Register</a>
                 </div>
             </div>
             <div class="item">
                 <div class="polaroid"><img src="./images/comedy.jpg">
                     <div class="caption">Lord of Humour</div>
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="loh">Details</button>
+
                     <a class="btn btn-outline-danger" target="_blank"  href="https://dare2compete.com/o/lord-of-humour-unmaad-2021-indian-institute-of-management-iim-bangalore-146658" role="button">Register</a>
                 </div>
             </div>
             <div class="item">
                 <div class="polaroid"><img src="./images/writing.jpg">
                     <div class="caption">InKarnation</div>
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="ik">Details</button>
+
                     <a class="btn btn-outline-danger" target="_blank" href="https://dare2compete.com/o/inkarnation-unmaad-2021-indian-institute-of-management-iim-bangalore-146661" role="button">Register</a>
                 </div>
             </div>
@@ -94,9 +108,124 @@
         ©UNMAAD '21, IIM Bangalore - 560076
     </footer>
 </section>
-
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Rules and Regulations</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+    $('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var data = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  if(data=="kk") {
+    modal.find('.modal-body').html(`<div _ngcontent-d2c-frontend-c218="" class="ng-tns-c218-52 blue-border d2c-container"><!----><!----><h2 _ngcontent-d2c-frontend-c218="" class="hdng ng-tns-c218-52 ng-star-inserted"> All that you need to know about  Kissa Kaviyon Ka </h2><!----><!----><!----><!----><div _ngcontent-d2c-frontend-c218="" class="editor-text ng-tns-c218-52"><p><em>"Dekhiye is kavi sammelan, prem aur hasya ka milan!"</em></p>
+<p>Be it war or a romantic date, no one can spell out emotions better than a poet. So here is a chance for you to explore your poetic persona and magnetize us through the charm of your poetry.</p>
+<p><strong>Rules and Regulations:</strong></p>
+<ol>
+<li><span>This is an individual event.</span></li>
+<li><span>The entire event will be in Hindi.</span></li>
+<li><span>Participants will need to submit their entries in the form of a pre-recorded video. Time limit is <strong>7 minutes</strong>.</span></li>
+<li><span>Offensive language and innuendos are strictly prohibited.</span></li>
+<li><span>The participants can choose one of the two themes - <em>'Hasya'&nbsp;</em>or&nbsp;<em>'Prem'.</em></span></li>
+<li><span>A large portion of the marks from the judges will be reserved for originality.</span></li>
+<li>Participants need to upload their video entry on Google Drive and share the open-access link of the same. Submit the Google Drive link under 'Round 1: Poetry' on or before 20th February 2021.</li>
+<li>The video should be of the extension .MP4 and follow the naming convention: Unmaad2021_KKK_&lt;Participant Name&gt;.<br>(Example: Unmaad2021_KKK_Akash Kumar.mp4)</li>
+<li>Plagiarism will not be appreciated and will be marked negatively.</li>
+<li>The decision of the judges and the organizers will be final and binding. The organizing committee reserves the right to make changes to the rules, which will be informed to the registered team well before the submission deadline. Unmaad 2021 reserves the right to use the videos on social media (suitable credits will be given to the participants).</li>
+</ol></div><!----><!----></div>`)
+  }
+  else if(data=="us") {
+    modal.find('.modal-body').html(`<div _ngcontent-d2c-frontend-c218="" class="ng-tns-c218-54 blue-border d2c-container"><!----><!----><h2 _ngcontent-d2c-frontend-c218="" class="hdng ng-tns-c218-54 ng-star-inserted"> All that you need to know about   The Unmaad Showdown </h2><!----><!----><!----><!----><div _ngcontent-d2c-frontend-c218="" class="editor-text ng-tns-c218-54"><p><em>"Battle of the Wits!"</em></p>
+<p><strong>Rules and Regulations:</strong></p>
+<ol>
+<li><span>There can be a maximum of 3 members per team.</span></li>
+<li><span>Members of a team need not be from the same college or company.</span></li>
+<li><span>This is a general quiz and is open to everyone.</span></li>
+<li><span>The decision of the judges and organizers will be final and binding in case of any conflict.<br></span></li>
+<li><span>The quiz will be conducted in two rounds. The first round will be an online quiz. The shortlisted teams will participate in a live online round. Details of the rounds will be communicated with the registered teams.</span></li>
+</ol></div><!----><!----></div>`)
+  }
+  else if (data=="se") {
+    modal.find('.modal-body').html(`<div _ngcontent-d2c-frontend-c218="" class="ng-tns-c218-56 blue-border d2c-container"><!----><!----><h2 _ngcontent-d2c-frontend-c218="" class="hdng ng-tns-c218-56 ng-star-inserted"> All that you need to know about  Sp-Entastic </h2><!----><!----><!----><!----><div _ngcontent-d2c-frontend-c218="" class="editor-text ng-tns-c218-56"><p><em>"The spo'r'tlight is on you!"</em></p>
+<p><strong>Rules and Regulations:</strong></p>
+<ol>
+<li>There can be a maximum of 3 members per team.</li>
+<li>Members of a team need not be from the same organization.</li>
+<li>This is a sports and entertainment quiz and is open only to college and school students.</li>
+<li>The decision of the judges and organizers will be final and binding in case of any conflict.</li>
+<li>The quiz will be conducted in two rounds. The first round will be an online quiz. The shortlisted teams will participate in a live online quiz. Details of the rounds will be communicated with the registered teams.</li>
+</ol></div><!----><!----></div>`)
+  }
+  else if (data=="jam") {
+    modal.find('.modal-body').html(`<div _ngcontent-d2c-frontend-c218="" class="ng-tns-c218-58 blue-border d2c-container"><!----><!----><h2 _ngcontent-d2c-frontend-c218="" class="hdng ng-tns-c218-58 ng-star-inserted"> All that you need to know about  JAM (Jest-A-Minute) </h2><!----><!----><!----><!----><div _ngcontent-d2c-frontend-c218="" class="editor-text ng-tns-c218-58"><p><em>Jest a minute to win it!</em></p>
+<p>Are you the one to always speak your mind? Well, get ready to shoot and captivate us with your words.<br>Join this fun event hosted by JAM Master, Christopher. You have "Jest A Minute" to show him how fun and quirky you are!&nbsp;</p>
+<p><strong>Rules and Regulations:</strong></p>
+<ol>
+<li>This will be an individual event.</li>
+<li>The event will consist of a series of elimination rounds, followed by a final round.</li>
+<li>The rules of all the rounds will be explained at the start of the event by the JAM Master. However, they will revolve around the traditional JAM rules.</li>
+<li>The JAM Master is <strong>GOD</strong>.</li>
+<li>In case of any further queries regarding the rounds or rules of the event, please refer to rule 3 again.</li>
+</ol></div><!----><!----></div>`)
+  }
+  else if (data=="ww") {
+    modal.find('.modal-body').html(`<div _ngcontent-d2c-frontend-c218="" class="ng-tns-c218-62 blue-border d2c-container"><!----><!----><h2 _ngcontent-d2c-frontend-c218="" class="hdng ng-tns-c218-62 ng-star-inserted"> All that you need to know about  WordsWorth </h2><!----><!----><!----><!----><div _ngcontent-d2c-frontend-c218="" class="editor-text ng-tns-c218-62"><p><em>"<span>Jack of Wordplays and Master of Puns!"</span></em></p>
+<p>Will all the world's words work towards making you worthy of worship? Bring out the logophile in you and solve challenging word puzzles in this exciting word game.</p>
+<p><strong>Rules and Regulations:</strong></p>
+<ol>
+<li>A team should consist of exactly 2 members.</li>
+<li>Members of a team need not be from the same college or company.</li>
+<li>The format of the rounds will be conveyed on the day of the events with the registered participants.</li>
+<li>The decision of judges and organizers will be final and binding.</li>
+</ol></div><!----><!----></div>`)
+  }
+  else if (data=="loh") {
+    modal.find('.modal-body').html(`<div _ngcontent-d2c-frontend-c218="" class="ng-tns-c218-66 blue-border d2c-container"><!----><!----><h2 _ngcontent-d2c-frontend-c218="" class="hdng ng-tns-c218-66 ng-star-inserted"> All that you need to know about  Lord of Humour </h2><!----><!----><!----><!----><div _ngcontent-d2c-frontend-c218="" class="editor-text ng-tns-c218-66"><p><em>"<span>Joke Karna Koi Mazaak Nahi!"</span></em></p>
+<p>Do you have the magic power to make people roll on the floor, laughing? Whether they're your witty one-liners or quirky puns, bring on your funny side to be the next king of comedy!</p>
+<p><strong>Rules and Regulations:</strong></p>
+<ol>
+<li><span>This is an individual event.</span></li>
+<li><span>Participants need to submit their set in the form of a pre-recorded video in round 1.&nbsp;<strong>Time Limit - 5 minutes</strong></span></li>
+<li><span>Top entries will proceed to the final round where they will have to perform live. Details of the same will be shared later.</span></li>
+<li><span>Language can be either Hindi or English.</span></li>
+<li><span>Offensive language and innuendos are strictly prohibited.</span></li>
+<li><span>Judging criteria will be broadly based on the originality, humour, and quality of content.</span></li>
+<li>Participants need to upload their video entry on Google Drive and share the open-access link of the same. Submit the Google Drive link under 'Round 1: Warm Up' by 20th February 2021.</li>
+<li>The video should be of the extension .MP4 and follow the naming convention: Unmaad2021_LOH_&lt;Participant Name&gt;.<br>(Example: Unmaad2021_LOH_Akash Kumar.mp4)</li>
+<li>Plagiarism will not be appreciated and will be marked negatively.</li>
+<li>The decision of the judges and the organizers will be final and binding. The organizing committee reserves the right to make changes to the rules, which will be informed to the registered team well before the submission deadline. Unmaad 2021 reserves the right to use the videos on social media (suitable credits will be given to the participants).</li>
+</ol></div><!----><!----></div>`)
+  }
+  else {
+    modal.find('.modal-body').html(`<div _ngcontent-d2c-frontend-c218="" class="ng-tns-c218-60 blue-border d2c-container"><!----><!----><h2 _ngcontent-d2c-frontend-c218="" class="hdng ng-tns-c218-60 ng-star-inserted"> All that you need to know about  InKarnation </h2><!----><!----><!----><!----><div _ngcontent-d2c-frontend-c218="" class="editor-text ng-tns-c218-60"><p><em>"<span>A drop of ink to make a million think!"</span></em></p>
+<p>We invite you to take a step out of reality and tap into your creative imagination. <strong>InKarnation </strong>will test your creative writing skills through a series of quirky challenges as you pave your path towards becoming a writer.</p>
+<p><strong>Rules and Regulations:</strong></p>
+<ol>
+<li><span>This is an individual event.</span></li>
+<li><span>This is a creative writing event with the format being limited to narrative story/ dialogue play. Participants will be asked to create a coherent and complete piece of writing incorporating the challenges provided.</span></li>
+<li><span>The details of the challenges will be shared with the registered participants via email.</span></li>
+<li><span>The decision of the judges and organizers shall be final and binding.</span></li>
+<li><span>Participants will be provided <strong>5 days</strong> to make their submissions.</span></li>
+</ol></div><!----><!----></div>`)
+  }
+})
+</script>
 </body>
 </html>

@@ -131,6 +131,12 @@ body {
     filter: drop-shadow(5px 5px 5px #FFD700); */
 }
 
+.disabled {
+    filter: grayscale(100%);
+    pointer-events: none;
+    cursor: default;
+}
+
 .go-live-nav {
     bottom: 17vh;
     right: 28%;

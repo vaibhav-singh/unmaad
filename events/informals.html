@@ -49,18 +49,24 @@
             <div class="item">
                 <div class="polaroid"><img src="./images/MAMU.jpg">
                     <div class="caption">Mr. & Ms. Unmaad</div>
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="mamu">Details</button>
+
                     <a class="btn btn-outline-danger"  target="_blank" href="https://dare2compete.com/o/mr-ms-unmaad-unmaad-2021-indian-institute-of-management-iim-bangalore-146849" role="button">Register</a>
                 </div>
             </div>
             <div class="item">
                 <div class="polaroid"><img src="./images/BBS.jpg">
                     <div class="caption">Beg Borrow Selfie</div>
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="bbs">Details</button>
+
                     <a class="btn btn-outline-danger" target="_blank" href="https://dare2compete.com/o/beg-borrow-selfie-unmaad-2021-indian-institute-of-management-iim-bangalore-146934" role="button">Register</a>
                 </div>
             </div>
             <div class="item">
                 <div class="polaroid"><img src="./images/POKER.jpeg">
                     <div class="caption">Online Poker</div>
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="op">Details</button>
+
                     <a class="btn btn-outline-danger" target="_blank" href="https://dare2compete.com/o/online-poker-unmaad-2021-indian-institute-of-management-iim-bangalore-147851" role="button">Register</a>
                 </div>
             </div>
@@ -70,9 +76,134 @@
         ©UNMAAD '21, IIM Bangalore - 560076
     </footer>
 </section>
-
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Rules and Regulations</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+      </div>
+    </div>
+  </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+    $('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var data = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  if(data=="mamu") {
+    modal.find('.modal-body').html(`<div _ngcontent-d2c-frontend-c218="" class="ng-tns-c218-41 d2c-container purple-border"><!----><!----><h2 _ngcontent-d2c-frontend-c218="" class="hdng ng-tns-c218-41 ng-star-inserted"> All that you need to know about  Mr. &amp; Ms. Unmaad </h2><!----><!----><!----><!----><div _ngcontent-d2c-frontend-c218="" class="editor-text ng-tns-c218-41"><p><strong>Mr. &amp; Ms. Unmaad</strong></p>
+<p><span>We know that the past year was hard, but it was also the year of self-discovery and introspection. It was the year many of us united with our passion, trying to find ways to keep ourselves happy and engaged! This Unmaad, we are embracing 2021 with new energy and we want you to join us. It’s your time to take the stage and shine in the most sought-after title of the festival.</span></p>
+<p><strong>Rules:</strong></p>
+<p><strong>Round 1: Introduction &amp; Talent Round (Deadline 24th Feb, 2021)</strong></p>
+<ul>
+<li><span>This is an individual contest.</span></li>
+<li><span>This round requires 3 entries - 1 picture, 1 introduction video, and 1 talent video.</span></li>
+<li><span>Participants are expected to go to the event page on D2C</span><span> and register for the event after filling the D2C form.</span></li>
+<li>Participants are expected to upload their picture and video submissions in the form given.</li>
+<li>The detailed specifications of the entries are mentioned below.</li>
+</ul>
+<p><strong>Round 1 Picture Entry</strong></p>
+<ul>
+<li><span>Upload a good picture of yours to be shared on the Unmaad Events social media page.</span></li>
+<li><span>A good well lit, bright picture that properly shows your face is ideal.</span></li>
+<li><span>Maintain an aspect ratio of 1:1 for the picture to be uploaded in either .jpeg, .jpg, .png format.</span></li>
+</ul>
+<p><strong>Round 1 Intro Video Entry</strong></p>
+<ul>
+<li><span>Wear your favorite outfit and tell us about yourself in the form of a short introduction video.</span></li>
+<li><span>It can be as creative as you imagine. Emotional, funny, artistic, dramatic, simple – whatever you are comfortable with.</span></li>
+<li><span><span>Time Allotted: </span><strong>1 minute</strong></span></li>
+<li><span>Advanced video editing is prohibited. It should be a simple video without any special effects.</span></li>
+</ul>
+<p><strong>Round 1 Talent Video Entry</strong></p>
+<ul>
+<li><span>This entry is a chance to showcase your talent to the world!</span></li>
+<li><span>Participants are expected to make a video of themselves showing us what they are good at, basically their talent. It can be anything that sets them apart! Remember, there are no boundaries, and they can be as creative as they can.</span></li>
+<li><span><span>Time Allotted: </span><strong>1 minute</strong></span></li>
+</ul>
+<p><strong>Round 1 Judging Criterion</strong></p>
+<ul>
+<li><span>Participants will be judged on the basis of all the three entries submitted by them.</span></li>
+<li><span>Judging Criteria:</span><span> Overall performance, creativity, originality, sticking to duration guidelines, and crowd engagement (likes).</span></li>
+<li><span>The entries will be posted on the official Unmaad Events channel as a single post. Participants can share the post to get crowd engagement.</span></li>
+</ul>
+<p><strong>Round 2: In-Person Interaction</strong></p>
+<ul>
+<li><span>The top entries will be selected to participate in Round 2 of Mr. &amp; Ms. Unmaad.</span></li>
+<li><span>Participants are expected to join a video conferencing call where they have to interact with the judges. It will be a Q&amp;A round and can be accompanied by small games to gauge participants’ personalities. Questions will be asked by judges. It could be situation-based, a topic given for extempore, or rapid-fire.</span></li>
+<li><span>The detailed instructions will be communicated to all of the finalists, post round 1 results.</span></li>
+</ul></div><!----><!----></div>`)
+  }
+  else if(data=="bbs") {
+    modal.find('.modal-body').html(`<div _ngcontent-d2c-frontend-c218="" class="ng-tns-c218-43 blue-border d2c-container"><!----><!----><h2 _ngcontent-d2c-frontend-c218="" class="hdng ng-tns-c218-43 ng-star-inserted"> All that you need to know about  Beg Borrow Selfie </h2><!----><!----><!----><!----><div _ngcontent-d2c-frontend-c218="" class="editor-text ng-tns-c218-43"><p><strong>Event Description:</strong></p>
+<p><strong>Beg, Borrow, Click &amp; Win!</strong></p>
+<p><span>An event that will make you search the nook and corner of your house and create a mess of totally unrelated but fun items. Go on and dig for items on your list.&nbsp;</span></p>
+<p><strong>Rules:</strong></p>
+<ol>
+<ol>
+<li aria-level="1"><span>This is an individual contest.</span></li>
+<li aria-level="1"><span>Register for the Unmaad Event Beg, Borrow, Selfie on the D2C platform, </span><span>and complete the form.</span></li>
+<li aria-level="1"><strong>On the day of the event, you’ll receive an email with the list of items you need to find for the event.</strong></li>
+<li aria-level="1"><span>A selfie/picture is to be taken with each of the items on the list.</span></li>
+<li aria-level="1"><span>The object must be clearly visible in the selfie. Ambiguous images will not be considered.</span></li>
+<li aria-level="1"><strong>All the images must be sent to contact via WhatsApp</strong><span>, using only the mobile number filled during the time of registration. Pictures from any other mobile number will not be considered. </span><strong>Detailed submission instructions will be communicated on the day of the event.</strong></li>
+<li aria-level="1"><span>Mention the corresponding item number in the list with each picture that is sent.</span></li>
+<li aria-level="1"><span>There should be only one selfie for each item (No two items should be clubbed in one image).</span></li>
+<li aria-level="1"><span>Each item will fetch some points and the total score will be calculated as the sum total of points of the selfies sent.</span></li>
+<li aria-level="1"><span>Judging will be done based upon the number of items a team is able to collect, taking the weight allotted to each item in the account.</span></li>
+<li aria-level="1"><span>The decision of the judges and organizers is final and binding in case of any conflict.</span></li>
+<li aria-level="1"><span>Organizers hold the right to change/modify rules on the day of the event. Participants shall be informed in advance of any rule changes.</span></li>
+</ol>
+</ol>
+<p><strong>All the detailed instructions, as well as the item list, will be mailed to the participants prior to the event.</strong></p></div><!----><!----></div>`)
+  }
+  else if (data=="op") {
+    modal.find('.modal-body').html(`<div _ngcontent-d2c-frontend-c218="" class="ng-tns-c218-45 blue-border d2c-container"><!----><!----><h2 _ngcontent-d2c-frontend-c218="" class="hdng ng-tns-c218-45 ng-star-inserted"> All that you need to know about  Online Poker - Pokerstars </h2><!----><!----><!----><!----><div _ngcontent-d2c-frontend-c218="" class="editor-text ng-tns-c218-45"><p><strong>Event Details:</strong></p>
+<p>Finish your work, pack your bag, put on your poker face, and join the poker madness. We’ve got 2 – ‘Free to Play’ Online poker tournaments with a guaranteed prize pool of ₹25,000.</p>
+<p><strong>Poker Night-</strong></p>
+<p><strong>Date &amp; Time:</strong> <strong>5<sup>th</sup> Mar</strong> &amp; <strong>6<sup>th</sup> Mar</strong> @ <strong>10 PM</strong></p>
+<p><strong>Venue:</strong> PokerStars</p>
+<p><em>2 nights of online Texas Hold’em Poker with ₹25,000 prize pool guaranteed across 2 events. </em></p>
+<p><strong>How to Participate?</strong></p>
+<ol>
+<li>Sign Up on our website.</li>
+<li>Once you’ve signed up, download and install the PokerStars India application on your preferred portable device – Laptop, Tablet, or Smartphone.</li>
+<li>The poker tournaments will be visible in the tournament lobby on the app. For a quick search, type Parivartan in the search bar. The tournaments will pop up.</li>
+<li>Click on register and enter the tournament password. Here are the online tournament details:
+<ol>
+<li><strong>The Mini - Unmaad 2021 Edition (5th March @10:00PM), Password - PSIIMB05</strong></li>
+<li><strong>The Biggie - Unmaad 2021 Edition (6th March @10:00PM), Password - PSIIMB06</strong></li>
+</ol>
+</li>
+<li>The tournament will start at the designated time and will be a free-to-play tournament i.e. no entry fee will be charged. There will be a rebuy and addon component of ₹100 &amp; ₹150 for the events wherein the players can buy-in if busted. The prize pool will be ₹10,000 &amp; ₹15,000 guaranteed respectively for the events. The pay-out will be automated depending on the number of entries.</li>
+<li>Prizes will be in the form of real cash and will be credited to winners' PokerStars India account. They can then be withdrawn or used to play cash/tournament games on PokerStars India. Withdrawal will be processed post-KYC verification.</li>
+</ol>
+<p><strong>How to sign up on PokerStars India &amp; claim your free ticket to the daily free tournaments?</strong></p>
+<ul>
+<li>Click on <strong>Log In</strong> if you already have an account with us. Click <strong>Sign Up</strong> to create a new account.</li>
+<li>Once you click on Sign Up, a <strong>‘Quick Account Creation</strong>’ form will pop-up. Fill in the required details.</li>
+<li>Once you have finished creating your account, complete the <strong>Mobile Verification</strong> and the <strong>Real Money Form</strong>.</li>
+<li>Following your Registration, Mobile Verification &amp; Real Money Form completion on PokerStars India, your account will be credited with a <strong>Chest</strong> containing:
+<ul>
+<li>15-day entry to the 'IMIN' Daily Freerolls, awarding ₹10,000 in cash prizes every day.</li>
+</ul>
+</li>
+<li>Here’s a quick video on how to use the PokerStars India App- https://bit.ly/3qz2973</li>
+</ul>
+<p><strong>Note: For any issues/queries, please drop a message to the support team via the Contact Us form on PokerStars Website.</strong></p></div><!----><!----></div>`)
+  }
+})
+</script>
 </body>
 </html>

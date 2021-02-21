@@ -49,36 +49,47 @@
             <div class="item">
                 <div class="polaroid"><img src="./images/HC.jpg">
                     <div class="caption">Haute Couture</div>
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="hc">Details</button>
+
                     <a class="btn btn-outline-danger" target="_blank" href="https://dare2compete.com/o/haute-couture-unmaad-2021-indian-institute-of-management-iim-bangalore-147229" role="button">Register</a>
                 </div>
             </div>
             <div class="item">
                 <div class="polaroid"><img src="./images/CH.jpg">
                     <div class="caption">Chef's Hat</div>
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="ch">Details</button>
+
                     <a class="btn btn-outline-danger" target="_blank" href="https://dare2compete.com/o/chefs-hat-unmaad-2021-indian-institute-of-management-iim-bangalore-146669" role="button">Register</a>
                 </div>
             </div>
             <div class="item">
                 <div class="polaroid"><img src="./images/getsetcreate.jpg">
                     <div class="caption">Get.Set.Create.</div>
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="gsc">Details</button>
+
                     <a class="btn btn-outline-danger" target="_blank" href="https://dare2compete.com/o/getsetcreate-unmaad-2021-indian-institute-of-management-iim-bangalore-146623" role="button">Register</a>
                 </div>
             </div>
             <div class="item">
                 <div class="polaroid"><img src="./images/beckham.jpg">
                     <div class="caption">Blend it Like Beckham</div>
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="bilb">Details</button>
+
                     <a class="btn btn-outline-danger" target="_blank" href="https://dare2compete.com/o/blend-it-like-beckham-unmaad-2021-indian-institute-of-management-iim-bangalore-146632" role="button">Register</a>
                 </div>
             </div>
             <div class="item">
                 <div class="polaroid"><img src="./images/goodyshoes.jpg">
                     <div class="caption">Goody-Two-Shoes</div>
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="gts">Details</button>
+
                     <a class="btn btn-outline-danger" target="_blank" href="https://dare2compete.com/o/goody-two-shoes-unmaad-2021-indian-institute-of-management-iim-bangalore-146645" role="button">Register</a>
                 </div>
             </div>
             <div class="item">
                 <div class="polaroid"><img src="./images/weave.jpg">
                     <div class="caption">Weave A Tale</div>
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="wat">Details</button>
                     <a class="btn btn-outline-danger" target="_blank" href="https://dare2compete.com/o/weave-a-tale-unmaad-2021-indian-institute-of-management-iim-bangalore-146648" role="button">Register</a>
                 </div>
             </div>
@@ -88,9 +99,220 @@
         ©UNMAAD '21, IIM Bangalore - 560076
     </footer>
 </section>
-
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Rules and Regulations</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+      </div>
+    </div>
+  </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+    $('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var data = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  if(data=="hc") {
+    modal.find('.modal-body').html(`<div _ngcontent-d2c-frontend-c218="" class="ng-tns-c218-29 blue-border d2c-container"><!----><!----><h2 _ngcontent-d2c-frontend-c218="" class="hdng ng-tns-c218-29 ng-star-inserted"> All that you need to know about  Haute Couture </h2><!----><!----><!----><!----><div _ngcontent-d2c-frontend-c218="" class="editor-text ng-tns-c218-29"><p>Express yourself, Gleam and Glow, Turn Heads, and Steal the Show!</p>
+<p>"Design is a constant challenge to balance comfort with luxe, the practical with the desirable". This Unmaad, show us what Balance means to you. Challenge the existing, and make heads turn. Encaptivate and enthrall us with your fabulous sense of fashion!</p>
+<p><strong>Theme:</strong> "Repurposing Balance"&nbsp;</p>
+<p><strong>Rules and Regulations:&nbsp;</strong></p>
+<ul>
+<li>This is a team event, open to all colleges as well as corporates.</li>
+<li>Each team needs to have at least 7 models, each with a unique outfit (Maximum number of models: 10).</li>
+<li>1 model is not allowed to present more than 1 outfit.</li>
+<li>Models can be assisted by stylists/ makeup artists and designers not exceeding 5 members.</li>
+<li>There can be multiple teams from a single college.</li>
+<li>Time Limit: 1-5 Minutes</li>
+<li>There will be a penalty for failing to adhere to the given time limit.</li>
+<li>Vulgarity of any kind would lead to disqualification of the team from the event. Hence, if the team feels that any stunt/ costume design can be considered obscene, it is strongly advised to consult the organizers before recording.&nbsp;</li>
+<li>The decision of the organizers will be final in case of any disputes arising due to the same.</li>
+<li>For the video, any use of animations is not allowed. Simple transition effects and background music/ narration can be used.</li>
+<li>Organizers hold the right to change/ modify rules on the day of the event. Participants shall be informed in advance of any changes in rules and regulations specific to the event.</li>
+<li>Decision of the judges will be considered final and binding in case of any conflict.</li>
+</ul>
+<p><strong>Submission Round:</strong></p>
+<p>Submission 1:</p>
+<ul>
+<li>This will be your Video Link submission. The team needs to upload their video onto Google Drive and share an open-access link to the same. This video should be of the .mp4 extension and follow the naming convention: "&lt;Team Captain Name&gt; - HC”</li>
+</ul>
+<p>Submission 2:</p>
+<ul>
+<li>This will be a pdf file submission. The file will comprise of one picture of each model in the outfit (this will serve as a catalog for the team), and one single write up (less than 400 words) explaining how your performance relates to the theme.</li>
+</ul>
+<p><strong>Additional Details:</strong></p>
+<p>The selected entries will be shared on the official Unmaad Instagram &amp; Facebook pages.</p>
+<p><strong>Judging Criteria:</strong></p>
+<ul>
+<li>Interpretation and the clarity of the theme as conveyed by both, the video and the accompanying writeup</li>
+<li>Fit every costume into the given theme</li>
+<li>Creativity and originality of the designs</li>
+<li>Overall Presentation</li>
+<li>Walk by the models, and coordination of the models</li>
+</ul></div><!----><!----></div>`)
+  }
+  else if(data=="gsc") {
+    modal.find('.modal-body').html(`<div _ngcontent-d2c-frontend-c218="" class="ng-tns-c218-31 blue-border d2c-container"><!----><!----><h2 _ngcontent-d2c-frontend-c218="" class="hdng ng-tns-c218-31 ng-star-inserted"> All that you need to know about  Get.Set.Create. </h2><!----><!----><!----><!----><div _ngcontent-d2c-frontend-c218="" class="editor-text ng-tns-c218-31"><p>Join hands with your clan, and bring to life your idea of a journey. Travel the world, or travel through life, tell us what this journey would mean to you. Get together in true spirit, and weave your story. After all, "The whole is greater than the sum of its parts".&nbsp;</p>
+<p>Theme:&nbsp;<strong>"Journey"</strong>&nbsp;</p>
+<p><strong>Rules and Regulations:&nbsp;</strong></p>
+<ol>
+<li>This is a team event, with each team comprising 3 members.&nbsp;</li>
+<li>Each member will be working on a single artwork, and there will be two parts to the final submission:&nbsp;
+<ul>
+<li>Submission 1 will require the three individual artworks to be merged into one file.&nbsp;</li>
+<li>Submission 2 requires all the artists to include the following into one single PDF.&nbsp;
+<ul>
+<li>5 pictures depicting stagewise progress of their artwork&nbsp;<span lang="EN-IN"><span>(5x3 photographs)</span></span></li>
+<li>1 photograph each of every artwork with the respective artist&nbsp;<span lang="EN-IN"><span>(1x3 photographs)</span></span></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Each artwork needs to be done on an A4&nbsp;(210X297 mm)&nbsp;size sheet of paper/canvas as required.&nbsp;</li>
+<li>Each artwork needs to be handmade. No digital media can be used in the same.&nbsp;</li>
+<li>Medium of Art: Left to the choice of the artist. Examples: Regular pencils, color pencils, graphite pencils, charcoal, crayons, sketch pens, oil pastels, watercolors, acrylic colors, etc.&nbsp;</li>
+<li>Any kind of plagiarism or any explicit content in the sketch shall not be entertained at any cost and the participant will be disqualified.&nbsp;</li>
+<li>The organizing team reserves the right to change or modify any of the rules.</li>
+</ol>
+<p><strong>Additional Details:</strong></p>
+<p>The selected entries will be shared on the official Unmaad Instagram &amp; Facebook pages.</p>
+<p><strong>Judging Criteria:</strong></p>
+<ol>
+<li>Interpretation and the clarity of the theme to the viewer</li>
+<li>Creativity and originality of the depicted theme</li>
+<li>Quality of artistic composition and overall design based on the theme</li>
+<li>Overall impression of the art</li>
+<li>Continuity in the artwork in all 3 frames</li>
+</ol></div><!----><!----></div>`)
+  }
+  else if (data=="bilb") {
+    modal.find('.modal-body').html(`<div _ngcontent-d2c-frontend-c218="" class="ng-tns-c218-33 blue-border d2c-container"><!----><!----><h2 _ngcontent-d2c-frontend-c218="" class="hdng ng-tns-c218-33 ng-star-inserted"> All that you need to know about  Blend It Like Beckham </h2><!----><!----><!----><!----><div _ngcontent-d2c-frontend-c218="" class="editor-text ng-tns-c218-33"><p>Let the creative juices flow, fuse and present at least two of your priced skills in one piece, as one gem. Give it an edge, strike a balance, identify a common path and go blend as you please.</p>
+<p><strong>Rules and Regulations:&nbsp;</strong></p>
+<ol type="1">
+<li value="1"><span>This is an individual event.</span></li>
+<li><span>There will be 3 parts to the submission:&nbsp; </span></li>
+<ul type="circle">
+<li><span>Submission 1 will be an image submission of the artwork (jpg/png format ONLY). Naming convention "&lt;Your Name&gt; - Blend It Like Beckham"</span></li>
+<li><span>Submission 2 will a PDF listing the media used and a short (max. 100 words) description of the artwork. Naming convention "&lt;Your Name&gt; - Blend It Like Beckham-2"</span></li>
+<li><span>Submission 3 will be a an image of the artist with the artwork (jpg/png format ONLY). Naming convention "&lt;Your Name&gt; - Blend It Like Beckham-3"</span></li>
+</ul>
+<li><span>There is no restriction on the size/dimensions of the artwork for this event.</span></li>
+<li><span>The artwork needs to be handmade. No digital media can be used in the same.&nbsp;</span></li>
+<li><span>Medium of art is the choice of the artist. Need to be at least 2. Examples: regular pencils, color pencils, graphite pencils, charcoal, crayons, sketch pens, oil pastels, water colors, acrylic colors, etc.&nbsp;</span></li>
+<li><span>Any kind of plagiarism or any explicit content in the sketch shall not be entertained at any cost and the participant will be disqualified.&nbsp;</span></li>
+<li><span>The organizing team reserves the right to change or modify any of the rules.</span></li>
+</ol>
+<p><strong>Additional Details:&nbsp;</strong></p>
+<p>The selected entries will be shared on the official Unmaad Instagram &amp; Facebook pages.&nbsp;</p>
+<p><strong>Judging Criteria:</strong></p>
+<ol>
+<li>Creativity and originality of the artwork</li>
+<li>Quality of artistic composition and overall design</li>
+<li>Overall impression of the art</li>
+<li>The quality of blending and the seamlessness of the blend</li>
+<li>&nbsp;Number of media/tools used</li>
+</ol></div><!----><!----></div>`)
+  }
+  else if (data=="gts") {
+    modal.find('.modal-body').html(`<div _ngcontent-d2c-frontend-c218="" class="ng-tns-c218-35 blue-border d2c-container"><!----><!----><h2 _ngcontent-d2c-frontend-c218="" class="hdng ng-tns-c218-35 ng-star-inserted"> All that you need to know about  Goody-Two-Shoes </h2><!----><!----><!----><!----><div _ngcontent-d2c-frontend-c218="" class="editor-text ng-tns-c218-35"><p>Create the masterpiece you always yearned for, go wild with colors, or stick to basic strokes. Reveal your inner fashionista and flaunt the footwear! &nbsp; But do remember - "In order to be irreplaceable one must always be different."</p>
+<p><strong>Rules and Regulations:&nbsp;</strong></p>
+<ol>
+<li value="1"><span>This is an individual event.</span></li>
+<li><span>There will be 1 submission per registration only. This will be a PDF submission of the artwork. Naming convention "&lt;Your Name&gt; - Goody-Two-Shoes"&nbsp;</span></li>
+<li><span>One participant can however register for a max. of 2 times for this event.</span></li>
+<li lang="en-US"><span>Templates of the shoes will be shared with the registered participants.</span></li>
+<li lang="en-US"><span>Participants need to download the template and either digitally design it, or hand design it after taking a printout. In the latter case, a picture of the hand made design can be added to the pdf submission.</span></li>
+<li><span>Artists can use colors, strokes and any approach but are expected to design the shoe without any brand name in the template.</span></li>
+<li><span>Medium of art is the choice of artist. Examples: regular pencils, color pencils, graphite pencils, charcoal, crayons, sketch pens, oil pastels, water colors, acrylic colors, etc.&nbsp;</span></li>
+<li><span>Any kind of plagiarism or any explicit content in the sketch shall not be entertained at any cost and the participant will be disqualified.&nbsp;</span></li>
+<li><span>The organizing team reserves the right to change or modify any of the rules.</span></li>
+</ol>
+<p><strong>Additional Details:&nbsp;</strong></p>
+<p>The selected entries will be shared on the official Unmaad Instagram &amp; Facebook pages.&nbsp;</p>
+<p><strong>Judging Criteria:</strong></p>
+<ol>
+<li value="1"><span>Creativity and originality of the artwork</span></li>
+<li><span>Quality of artistic composition and overall design</span></li>
+<li><span>Overall impression of the art</span></li>
+</ol></div><!----><!----></div>`)
+  }
+  else if (data=="ch") {
+    modal.find('.modal-body').html(`<div _ngcontent-d2c-frontend-c218="" class="ng-tns-c218-39 blue-border d2c-container"><!----><!----><h2 _ngcontent-d2c-frontend-c218="" class="hdng ng-tns-c218-39 ng-star-inserted"> All that you need to know about  Chef's Hat </h2><!----><!----><!----><!----><div _ngcontent-d2c-frontend-c218="" class="editor-text ng-tns-c218-39"><div>
+<div>
+<div>
+<p>Hitting the right notes, stimulating our tastebuds, and activating your inner cuisinier, get ready to walk a mile ahead in this not-so-traditional war of the master chefs. Enthrall us all with your creations and take us along your journey towards the masterpiece duo.</p>
+<p><strong>Rules and Regulations:</strong></p>
+<p><strong>Once registered, join the WhatsApp group for further updates- http://bit.ly/2NnKWPk</strong></p>
+<p><strong>Round 1</strong></p>
+<ol>
+<li>This is an individual/team event. Participants can take part individually or in teams of 2.</li>
+<li>The participants/teams are expected to design a recipe book of 2 dishes i.e. i) Evening Snack ii) Health Drink</li>
+<li>The participants/teams are expected to include the following as a part of their submission.
+<ol>
+<li>Creative Recipe Name</li>
+<li>List of Ingredients (along with prices)</li>
+<li>Stepwise procedure of preparation</li>
+<li>Preparation &amp; Cooking Time</li>
+<li>Photographs of ingredients list, 5 stagewise pictures of both the dishes to show the progress of cooking<br>The above details should be part of the submission in the format of a PDF file. Naming convention “&lt;Your Name&gt; - Chef's Hat - R1”.</li>
+</ol>
+</li>
+<li>Though the presentation of final dishes is important, the cutlery used to serve wouldn't be used to make any judgment.</li>
+<li>Any kind of plagiarism or any explicit content in the sketch shall not be entertained at any cost and the participant will be disqualified.</li>
+<li>The organizing team reserves the right to change or modify any of the rules.</li>
+</ol>
+<p><strong>Judgment Criteria:</strong></p>
+<ul>
+<li>Presentation and above mentioned Recipe Book guidelines</li>
+<li>Innovation and Presentation of the dishes</li>
+<li>Overall authenticity and aesthetic appeal</li>
+<li>Nutritional value of health drink</li>
+</ul>
+<p><strong>Additional Details:&nbsp;</strong></p>
+<p>The selected entries will be shared on the official Unmaad Instagram &amp; Facebook pages.</p>
+</div>
+</div>
+</div></div><!----><!----></div>`)
+  }
+  else {
+    modal.find('.modal-body').html(`<div _ngcontent-d2c-frontend-c218="" class="ng-tns-c218-37 blue-border d2c-container"><!----><!----><h2 _ngcontent-d2c-frontend-c218="" class="hdng ng-tns-c218-37 ng-star-inserted"> All that you need to know about  Weave A Tale </h2><!----><!----><!----><!----><div _ngcontent-d2c-frontend-c218="" class="editor-text ng-tns-c218-37"><p>Grab this chance to be your own Stan Lee! Get a feel of stepping in to Miller's shoes. Bring characters to life, and present your narrative, turn heads, as they turn pages. Make a joke, send a message, prove a point or just convey an idea, all this through a comic strip, just as you like it!</p>
+<p><strong>Rules and Regulations:&nbsp;</strong></p>
+<ol type="1">
+<li value="1"><span>This is an individual event.</span></li>
+<li><span>There will be three parts to the submission:&nbsp; </span></li>
+<ol type="1">
+<li value="1"><span>Submission 1 will require the artist to&nbsp;complete a minimum of 4 and a maximum of 8 storyboard boxes for their handmade humorous<br>comic strip entry, limited to 1 page (A4). Naming convention "&lt;Your Name&gt; - Weave-A-Tale"</span></li>
+<li><span>Submission 2 requires the artist to describe the key essence &amp; element of the comic strip (in a maximum of 200 words) into one single pdf. Naming convention "&lt;Your Name&gt; - Weave-A-Tale-2"</span></li>
+<li><span lang="en-IN">Submission 3 requires the artist to submit a set of 5 photographs depicting stage</span><span lang="en-US"> </span><span lang="en-IN">wise progress of the comic strip in a pdf file.&nbsp; Naming convention "&lt;Your Name&gt; - Weave-A-Tale-3"&nbsp;</span></li>
+</ol>
+<li><span>One participant can make a maximum of one submission.</span></li>
+<li><span>Medium of art can be from one among: pens, color pencils, pencils, sketch pens, crayons.</span></li>
+<li><span>Submissions can take inspiration from existing comic strips but exact plots or characters cannot be copied/re-created.</span></li>
+<li><span>Any kind of plagiarism or any explicit content in the sketch shall not be entertained at any cost and the participant will be disqualified.&nbsp;</span></li>
+<li><span>The organizing team reserves the right to change or modify any of the rules.</span></li>
+</ol>
+<p><strong>Additional Details:&nbsp;</strong></p>
+<p>The selected entries will be shared on the official Unmaad Instagram &amp; Facebook pages.&nbsp;</p>
+<p><strong>Judging Criteria:</strong></p>
+<ol type="1">
+<li value="1"><span>Creativity and originality of story </span></li>
+<li><span>Character Design</span></li>
+<li><span>Quality of artistic composition and overall design</span></li>
+<li><span>Humour content in the comic strip</span></li>
+</ol></div><!----><!----></div>`)
+  }
+})
+</script>
 </body>
 </html>

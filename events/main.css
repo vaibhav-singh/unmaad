@@ -64,6 +64,15 @@
 
 .container-events {
     background-image: url('./images/event_layout.png');
+    overflow-y: hidden;
+    height: 100%;
+    overflow-x: scroll;
+}
+
+.disabled {
+    filter: grayscale(100%);
+    pointer-events: none;
+    cursor: default;
 }
 
 .bird {
@@ -335,48 +344,53 @@ footer {
 }
 
 .proshow-nav > img:hover, .lits-nav > img:hover, .fashion-nav > img:hover, .dance-nav > img:hover, .music-nav  > img:hover, .informals-nav > img:hover, .dramatics-nav > img:hover {
-    transform: scale(1.2);
+    filter: drop-shadow(10px 10px 10px #000000);
+
 }
 
 
 .proshow-nav {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    top: 50%;
+    top: 45%;
+}
+
+.proshow-nav > img {
+    width: 500px;
 }
 
 .informals-nav {
     left: 30%;
-    top: 30%;
+    top: 32%;
     transform: translateX(-50%) translateY(-50%);
 }
 
 .dance-nav {
     right: 30%;
-    top: 30%;
+    top: 32%;
     transform: translateX(50%) translateY(-50%);
 }
 
 .dramatics-nav {
-    left: 15%;
+    left: 13%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
 
 .music-nav {
-    right: 15%;
+    right: 13%;
     top: 50%;
     transform: translateX(50%) translateY(-50%);
 }
 
 .lits-nav {
-    left: 25%;
+    left: 23%;
     top: 75%;
     transform: translateX(-50%) translateY(-50%);
 }
 
 .fashion-nav {
-    right: 25%;
+    right: 23%;
     top: 75%;
     transform: translateX(50%) translateY(-50%);
 }
@@ -472,4 +486,24 @@ footer {
         transform: translateY(-30%) translateX(-50%);
     }
     
+}
+
+.modal {
+    font-family: 'Roboto', sans-serif;
+}
+
+.modal-title {
+    font-weight: bolder;
+
+}
+
+.hdng {
+    font-family: 'Luckiest Guy', cursive;
+    color: tomato;
+}
+
+.editor-text > p > em{
+    font-family: 'Luckiest Guy', cursive;
+    color: tomato;
+
 }

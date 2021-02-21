@@ -49,24 +49,31 @@
             <div class="item">
                 <div class="polaroid"><img src="./images/CineTopia.jpg">
                     <div class="caption">Cine-topia</div>
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="ct">Details</button>
+
                     <a class="btn btn-outline-danger" target="_blank" href="https://dare2compete.com/o/cine-topia-unmaad-2021-indian-institute-of-management-iim-bangalore-146640" role="button">Register</a>
                 </div>
             </div>
             <div class="item">
                 <div class="polaroid"><img src="./images/ReelityCheck.jpg">
                     <div class="caption">Reelity Check</div>
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="rc">Details</button>
+
                     <a class="btn btn-outline-danger" target="_blank" href="https://dare2compete.com/o/reelity-check-unmaad-2021-indian-institute-of-management-iim-bangalore-146691" role="button">Register</a>
                 </div>
             </div>
             <div class="item">
                 <div class="polaroid"><img src="./images/MonoDramatic.jpg">
                     <div class="caption">Mono-dramatic</div>
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="md">Details</button>
+
                     <a class="btn btn-outline-danger" target="_blank" href="https://dare2compete.com/o/mono-dramatic-mono-acting-competition-unmaad-2021-indian-institute-of-management-iim-bangalore-146690" role="button">Register</a>
                 </div>
             </div>
             <div class="item">
                 <div class="polaroid"><img src="./images/SSketchy.jpg">
                     <div class="caption">Something Sketchy</div>
+                    <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="ss">Details</button>
                     <a class="btn btn-outline-danger" target="_blank" href="https://dare2compete.com/o/something-sketchy-sketch-comedy-competition-unmaad-2021-indian-institute-of-management-iim-bangalore-146682" role="button">Register</a>
                 </div>
             </div>
@@ -76,9 +83,196 @@
         ©UNMAAD '21, IIM Bangalore - 560076
     </footer>
 </section>
-
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Rules and Regulations</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+      </div>
+    </div>
+  </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+    $('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var data = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  if(data=="ct") {
+    modal.find('.modal-body').html(`<div _ngcontent-d2c-frontend-c218="" class="ng-tns-c218-18 blue-border d2c-container"><!----><!----><h2 _ngcontent-d2c-frontend-c218="" class="hdng ng-tns-c218-18 ng-star-inserted"> All that you need to know about  Cine-topia </h2><!----><!----><!----><!----><div _ngcontent-d2c-frontend-c218="" class="editor-text ng-tns-c218-18"><p>With the online version of Unmaad's flagship dramatics competition, take an escapade atop the cine topical. Let there be light (camera and, of course, action)!</p>
+<p><em>A shorter, B-Wilder(ing) drive into a sunset on a cinephile's boulevard!</em></p>
+<p><strong>Rules and Regulations:</strong></p>
+<ol>
+<li>In a team, there is a maximum limit of 20 comprising the core team and no limit on the support team.</li>
+<li>The registration has to be made before 11:59 PM, February 14th, 2021.</li>
+<li>The non-theme based event is open only for colleges.</li>
+<li>The submission deck is to be uploaded onto google drive and the link is to be shared(with access permissions) through the registration portal by 11:59 PM, February 20th, 2021. The deck should include:
+<ol>
+<li>Video submission of the short movie (MP4/MKV format)</li>
+<li>Document submission with Cast, Crew, Credits (script and music) and a short description (400 words max.) of the submission</li>
+<li>Poster for the short movie</li>
+</ol>
+</li>
+<li>There will be only 1 round of submission. Top 10 entries will have poster launch through Unmaad social media handles and soft release live in the Unmaad main event.</li>
+<li>Multiple entries per campus will be accepted. Maximum of 3 teams per campus will be selected for the final screening.</li>
+<li>Stock footage or footages used that have not been shot by the College members for the particular movie must be given due credit in the movie or credits. You need to submit the link of any such stock footage used at the time of submission. There is a limit of 20% on using stock footage. If any of the above rules are not followed, a penalty will be imposed in the final judging sheet.</li>
+<li>Judge's decision will be final.</li>
+<li>We reserve the right to change any of the rules.</li>
+<li>The script of the play can be original or adapted. Due credit should be given to the original playwright in the description if the script is adapted.</li>
+<li>There is no restriction on language. Embedded subtitles (not srt file attachment) are required to be added in case of usage of languages other than English/Hindi. If a small section uses some other language, then please add subtitles even for that. A penalty will be imposed in the final judging sheet if this is not followed.</li>
+<li>You are free to use a song, an instrumental or a mix of different background sounds/music as the background score for your film. You need to provide proper credits in the description in case you use someone else’s creation. An original poem or original compositions (a music made especially for the movie) are allowed and appreciated. A penalty will be imposed in the final judging sheet if credits are not provided in the video credits in such a case.</li>
+<li>The maximum duration for the short movie submission is 10 mins. Teams will be penalized for exceeding the given time limit of 10 minutes.</li>
+</ol></div><!----><!----></div>`)
+  }
+  else if(data=="rc") {
+    modal.find('.modal-body').html(`<div _ngcontent-d2c-frontend-c218="" class="ng-tns-c218-20 blue-border d2c-container"><!----><!----><h2 _ngcontent-d2c-frontend-c218="" class="hdng ng-tns-c218-20 ng-star-inserted"> All that you need to know about  Reelity Check </h2><!----><!----><!----><!----><div _ngcontent-d2c-frontend-c218="" class="editor-text ng-tns-c218-20"><p>Bedazzle us with the craziest <strong>Instagram Reels</strong>. Reel us into 30 seconds of the rawest, quirkiest, and most insane side of you.</p>
+<p><em>Reel in Insta-taneous fame!</em></p>
+<p><strong>General Rules:</strong></p>
+<ol>
+<li>In a team, there is a max limit of 10 comprising the number of actors and support team.</li>
+<li>The registration has to be made before 11:59 PM, February 17th, 2021.</li>
+<li>The event is open to all.</li>
+<li>There will be 2 rounds and 20 teams will be shortlisted from round 1.</li>
+<li>The actors and support team should be the same for both the rounds for a particular team.</li>
+<li>Multiple entries per campus will be accepted. But, there is an upper cap of one team per campus for the final round.</li>
+<li>Submission will be online through Instagram. Further guidelines will be shared via the registration portal.</li>
+<li>Judge's decision will be final.</li>
+<li>We reserve the right to change any of the rules.</li>
+</ol>
+<p><strong>Round 1:</strong></p>
+<ol>
+<li>There is no specific theme for Round 1.</li>
+<li>The deadline for submission of Round 1 is 11:59 PM, February 17th, 2021.</li>
+<li>Participants would be uploading their stories on Instagram, make their account public and share the link to the Reel on the registration portal.</li>
+<li>Top 20 teams with the most unique, original, and interesting content will move on to the 2nd round (No. of likes will not be a scoring criterion).</li>
+</ol>
+<p><strong>Round 2:</strong></p>
+<ol>
+<li>This will be a theme-based round. The selected participants will receive the theme via the registration portal on 22nd February 2021.</li>
+<li>The deadline for submission for Round 2 is 28th February 2021.</li>
+<li>These submissions should be uploaded on Google Drive and the link (with access permissions) should be shared on the registration portal. These Reels will then be shared from the official Unmaad events Instagram handle.</li>
+<li>The final submissions will be judged based on the content as well as the likes the post gathers on Instagram. All likes till 11:59 PM March 4th, 2021 will be considered.</li>
+</ol></div><!----><!----></div>`)
+  }
+  else if (data=="md") {
+    modal.find('.modal-body').html(`<div _ngcontent-d2c-frontend-c218="" class="ng-tns-c218-25 blue-border d2c-container"><!----><!----><h2 _ngcontent-d2c-frontend-c218="" class="hdng ng-tns-c218-25 ng-star-inserted"> All that you need to know about  Mono-Dramatic - Mono Acting Competition </h2><!----><!----><!----><!----><div _ngcontent-d2c-frontend-c218="" class="editor-text ng-tns-c218-25"><p><strong>Please note that registration deadlines are extended till 20th February, 2021</strong></p>
+<p>Get your act together for an opportunity to show off your creative self. Express, emote and serve us your inner acting bug.&nbsp;</p>
+<p><em>Shine on, you sole star!</em></p>
+<p><strong>General Rules:</strong></p>
+<ol>
+<li>This is an individual event.</li>
+<li>The actors can use props and background music for their act.</li>
+<li>The event is open to all.</li>
+<li>The registration has to be made before 11:59 PM, February 14th, 2020.</li>
+<li>Judge's decision will be final.</li>
+<li>We reserve the right to change any of the rules.</li>
+</ol>
+<p><strong>Round 1:</strong></p>
+<ol>
+<li>The first round will be an online submission. It will be a theatrical game that will be communicated through the registration portal to the registered candidates testing your theatrical, analytical, and entertainment skills.</li>
+<li>The deadline for the online submission for round 1 is 11:59 PM, 20th February 2021. You will have to upload a video file (MP4/MKV format max size 250 MB) on Google Drive and share the link (with access permission) on the registration portal.</li>
+<li>There is no restriction on language. Embedded subtitles (not srt file attachment) are required to be added in case of usage of languages other than English/Hindi. If a small section uses some other language, then please add subtitles even for that. A penalty will be imposed in the final judging sheet if this is not followed.</li>
+</ol>
+<p><strong>Round 1 Theme:</strong></p>
+<p><strong>Theme: “Doctor Help!”</strong></p>
+<p>• &nbsp; &nbsp;You would be required to prepare a monologue with the theme “Doctor Help!”.&nbsp;<br>• &nbsp; &nbsp;The monologue should contain at least 1 mood transition from the given list of emotions.<br>• &nbsp; &nbsp;Expected time duration: 1 min-3 min.&nbsp;<br>• &nbsp; &nbsp;No strict deductions for breaching time constraints marginally (+/-30 seconds)</p>
+<p>Mood transitions between any of the following emotions:<br>Happy, sad, angry, awkward, edgy, offended, optimistic, pessimistic, embarrassed, aroused, overwhelmed, panicky, protective, frightened, frustrated, impatient.</p>
+<p><strong>Round 2 | Live Event:</strong></p>
+<ol>
+<li>Top 10 candidates will be shortlisted for the final event from Round 1.</li>
+<li>Round 2 will be a live event. The participants have to perform live on stage/online platform (Zoom call), a 2-3 minute dramatics piece of their choice (any genre) including mime.</li>
+</ol></div><!----><!----></div>`)
+  }
+  else if (data=="ss") {
+    modal.find('.modal-body').html(`<div _ngcontent-d2c-frontend-c218="" class="ng-tns-c218-27 blue-border d2c-container"><!----><!----><h2 _ngcontent-d2c-frontend-c218="" class="hdng ng-tns-c218-27 ng-star-inserted"> All that you need to know about  Something Sketchy - Sketch Comedy Competition </h2><!----><!----><!----><!----><div _ngcontent-d2c-frontend-c218="" class="editor-text ng-tns-c218-27"><p>Get out your comedy guns and rain down your artillery of comedy. Juice your creativity to set up the whackiest plot for the loudest laughs.</p>
+<p><em>Houston, reporting <strong>Sketchmageddon </strong>from planet crazy!</em></p>
+<p><strong>Rules and Regulations:</strong></p>
+<ol>
+<li>In a team, there is a maximum limit of 20 comprising the core team and no limit on the support team.</li>
+<li>The registration has to be made before 11:59 PM, February 14th, 2021.</li>
+<li>The theme-based event is open only for all. A list of themes will be updated on the registration portal. Teams can choose one among them and create a comedy sketch.</li>
+<li>The submission deck is to be uploaded onto google drive and the link is to be shared (with access permissions) through the registration portal by 11:59 PM, February 20th, 2021. The deck should include:
+<ol>
+<li>Video submission of the sketch (MP4/MKV format, size limit: 600 MB)</li>
+<li>Document submission with Cast, Crew, Credits (script and music) and a short description (400 words max.) of the submission</li>
+</ol>
+</li>
+<li>There will be only 1 round of submission. The best 10 submissions will be screened in the main Unmaad event and the final results will be declared.</li>
+<li>Multiple entries per campus will be accepted. Maximum of 3 teams per campus will be selected for the final screening.</li>
+<li>Stock footage or footages used that have not been shot by the college members for the particular video must be given due credit in the movie or credits. You need to submit the link of any such stock footage used at the time of submission. There is a limit of 20% on using stock footage. If any of the above rules are not followed, a penalty will be imposed in the final judging sheet.</li>
+<li>Judge's decision will be final.</li>
+<li>We reserve the right to change any of the rules.</li>
+<li>There is no restriction on language. Embedded subtitles (not srt file attachment) are required to be added in case of usage of languages other than English/Hindi. If a small section uses some other language then please add subtitles even for that. A penalty will be imposed in the final judging sheet if this is not followed.</li>
+<li>You are free to use a song, an instrumental or a mix of different background sounds/music as the background score for your film. You need to provide proper credits in the description in case you use someone else’s creation. An original poem or original compositions (a music made especially for the sketch) are allowed and appreciated. A penalty will be imposed in the final judging sheet if credits are not provided in the video credits in such a case.</li>
+<li>The maximum duration for the video submission is 10 minutes. Teams will be penalized for exceeding the given time limit of 10 minutes.</li>
+</ol>
+<p><strong>Theme:</strong></p>
+<p>1) Weird Newscasters</p>
+<p>This is a setup where there will be a news anchor who is normal and news reporters(depending on the size of the team) each with an odd personality or character which they must exhibit as they relate appropriate news reports for their fields (could be sports, business, political).</p>
+<p>2) Select one of each Adjective, Profession, and Location from the given table below.</p>
+<table border="5" width="100%" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="108" height="21"><strong>Adjective</strong></td>
+<td width="108"><strong>Profession</strong></td>
+<td width="108"><strong>Location</strong></td>
+</tr>
+<tr>
+<td width="108" height="34">Loud</td>
+<td width="108">Restaurant Waiter/Waitress -A</td>
+<td width="108">Office</td>
+</tr>
+<tr>
+<td width="108" height="20">Quiet - A&nbsp;</td>
+<td width="108">Librarian - B</td>
+<td width="108">Art museum - B</td>
+</tr>
+<tr>
+<td width="108" height="20">Brave</td>
+<td width="108">Actor</td>
+<td width="108">Service station</td>
+</tr>
+<tr>
+<td width="108" height="20">Scared - B</td>
+<td width="108">Trash collector</td>
+<td width="108">Library</td>
+</tr>
+<tr>
+<td width="108" height="20">Childish</td>
+<td width="108">Singer</td>
+<td width="108">Restaurant - A</td>
+</tr>
+<tr>
+<td width="108" height="20">Smart</td>
+<td width="108">Mechanic</td>
+<td width="108">Home</td>
+</tr>
+<tr>
+<td width="108" height="21">Responsible</td>
+<td width="108">Engineer</td>
+<td width="108">Grocery Store</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;You can formulate your theme using these 3 words in the format:</p>
+<p><strong>Adjective</strong> - <strong>Profession </strong>- in a <strong>Location</strong></p>
+<p>For example-&nbsp;</p>
+<p>One theme can be-</p>
+<p>A) Quiet - Restaurant Waiter/Waitress - in a Restaurant or</p>
+<p>B) Scared - Librarian - in an Art Museum</p></div><!----><!----></div>`)
+  }
+  
+})
+</script>
 </body>
 </html>
