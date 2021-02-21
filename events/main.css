@@ -16,7 +16,7 @@
 
 .header > a {
     position: absolute;
-    left: 5%;
+    left: 10%;
     top: 50%;
     transform: translateY(-30%);
 }
@@ -521,4 +521,19 @@ footer {
     background-repeat: no-repeat; 
     background-color: rgb(14,218,205);
     background-position: center;
+ }
+
+ .back-arrow {
+     position: absolute;
+     top: 0;
+     color: white;
+     width: 50px;
+    height: 50px;
+    font-size: 50px!important;
+    left: 0;
+    text-shadow: 3px 4px 7px rgb(81 67 21 / 80%);
+ }
+
+ .back-link {
+     left:5%!important;
  }
