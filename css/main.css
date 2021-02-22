@@ -297,64 +297,73 @@ transition: all 0.35s;
 
 @media screen and (max-width: 950px) {
     .landing-logo {
-        bottom: 40vh;
+        bottom: 45vh;
         width: 25%;
     }
     .go-live-nav {
-        bottom: 0vh;
+        bottom: 12vh;
         right: 54%;
     }
     .sponsors-nav {
-        bottom: 19vh;
+        bottom: 34vh;
         right: 54%;
     }
     .events-nav {
-        bottom: 9vh;
+        bottom: 24vh;
         left: 10%;
     }
     .schedule-nav {
-        bottom: 0vh;
+        bottom: 13vh;
         left: 53%;
     }
     .about-us-nav {
-        bottom: 18vh;
+        bottom: 33vh;
         left: 53%;
     }
     .proshows-nav {
-        bottom: 9vh;
+        bottom: 24vh;
         right: 12%;
+    }
+    
+    .landing-wrapper {
+        overflow-y: hidden;
     }
 }
 
 @media screen and (max-width: 700px) {
+    .landing-wrapper {
+        overflow-y: hidden;
+    }
     .landing-logo {
-        bottom: 30vh;
+        bottom: 45vh;
         width: 40%;
     }
     .go-live-nav {
-        bottom: 0vh;
+        bottom: 12vh;
         right: 54%;
     }
     .sponsors-nav {
-        bottom: 22vh;
+        bottom: 34vh;
         right: 54%;
     }
     .events-nav {
-        bottom: 10vh;
+        bottom: 22vh;
         left: 5%;
     }
     .schedule-nav {
-        bottom: 1vh;
+        bottom: 13vh;
         left: 53%;
     }
     .about-us-nav {
-        bottom: 21vh;
+        bottom: 33vh;
         left: 53%;
     }
     .proshows-nav {
-        bottom: 7vh;
+        bottom: 22vh;
         right: 5%;
     }
+
+
 }
 
 /* iPad Pro media query */
