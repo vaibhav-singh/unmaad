@@ -6,7 +6,7 @@
 }
 
 .our-team, .about, .aftermovie {
-    height: 100vh;
+    min-height: 100vh;
     overflow-y: scroll;
     background: url('./img/sky.png');
     background-repeat: no-repeat;
@@ -61,10 +61,10 @@
 }
 
 .header {
-    text-align: right;
+    text-align: center;
     /* padding: 20px; */
     padding: 20px 10%;
-    width: 80%;
+    width: 100%;
 }
 
 .header > a {
@@ -138,13 +138,13 @@
 }
 
 .scroll-container {
-  height: 100vh;
+  min-height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
 
 .scroll-container > section {
-    height: 100vh;
+    min-height: 100vh;
     scroll-snap-align: center;
 }
 
