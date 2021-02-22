@@ -301,58 +301,58 @@ transition: all 0.35s;
         width: 25%;
     }
     .go-live-nav {
-        bottom: 7vh;
+        bottom: 0vh;
         right: 54%;
     }
     .sponsors-nav {
-        bottom: 29vh;
+        bottom: 19vh;
         right: 54%;
     }
     .events-nav {
-        bottom: 19vh;
+        bottom: 9vh;
         left: 10%;
     }
     .schedule-nav {
-        bottom: 8vh;
+        bottom: 0vh;
         left: 53%;
     }
     .about-us-nav {
-        bottom: 28vh;
+        bottom: 18vh;
         left: 53%;
     }
     .proshows-nav {
-        bottom: 19vh;
+        bottom: 9vh;
         right: 12%;
     }
 }
 
 @media screen and (max-width: 700px) {
     .landing-logo {
-        bottom: 40vh;
+        bottom: 30vh;
         width: 40%;
     }
     .go-live-nav {
-        bottom: 7vh;
+        bottom: 0vh;
         right: 54%;
     }
     .sponsors-nav {
-        bottom: 29vh;
+        bottom: 22vh;
         right: 54%;
     }
     .events-nav {
-        bottom: 17vh;
+        bottom: 10vh;
         left: 5%;
     }
     .schedule-nav {
-        bottom: 8vh;
+        bottom: 1vh;
         left: 53%;
     }
     .about-us-nav {
-        bottom: 28vh;
+        bottom: 21vh;
         left: 53%;
     }
     .proshows-nav {
-        bottom: 17vh;
+        bottom: 7vh;
         right: 5%;
     }
 }
