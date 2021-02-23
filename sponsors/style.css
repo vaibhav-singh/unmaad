@@ -549,12 +549,12 @@ font-family: 'Roboto', sans-serif;
         width: 25%;
     }
     .person-1 > .talk-bubble {
-       
+        font-size: 12px;
         transform: translateX(-50%) translateY(60px);
     }
 
     .person-2 > .talk-bubble {
-
+        font-size: 12px;
         transform: translateX(58%) translateY(60px);
     }
     .description {
@@ -585,11 +585,11 @@ font-family: 'Roboto', sans-serif;
         height: 200px;
     }
     .person-1 > .talk-bubble {
-       
+        font-size: 12px;
         transform: translateX(-50%) translateY(60px);}
 
     .person-2 > .talk-bubble {
-
+        font-size: 12px;
         transform: translateX(58%) translateY(60px);
     }
 
