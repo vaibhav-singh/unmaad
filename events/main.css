@@ -429,7 +429,7 @@ footer {
     height: 100%;
     z-index: 9999;
     background-image: url('../img/loader.gif');
-    background-size: 400px;
+    background-size: 200px;
     background-repeat: no-repeat; 
     background-color: rgb(14,218,205);
     background-position: center;
