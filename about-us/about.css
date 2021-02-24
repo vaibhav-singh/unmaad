@@ -173,7 +173,7 @@ footer {
 }
 
 .scroll-nav {
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 10;
@@ -192,7 +192,7 @@ footer {
 }
 
 .scroll-custom {
-    position: relative;
+    position: fixed;
     text-align: right;
 }
 
@@ -200,6 +200,10 @@ footer {
     .landing-logo {
         bottom: 45vh;
         width: 25%;
+    }
+
+    .flying-blimp {
+        display: none;
     }
 
     .description {
@@ -215,12 +219,24 @@ footer {
     .item {
         width: 100%;
     }
+
+    .header > a {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 700px) {
     .landing-logo {
         bottom: 45vh;
         width: 40%;
+    }
+
+    .header > a {
+        display: block;
+    }
+
+    .flying-blimp {
+        display: none;
     }
 
     .description {
