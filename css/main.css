@@ -297,7 +297,7 @@ transition: all 0.35s;
 
 @media screen and (max-width: 950px) {
     .landing-logo {
-        bottom: 50%;
+        bottom: 40%;
         width: 25%;
     }
     .go-live-nav {
@@ -305,11 +305,11 @@ transition: all 0.35s;
         right: 54%;
     }
     .sponsors-nav {
-        bottom: 21%;
+        bottom: 25%;
         right: 54%;
     }
     .events-nav {
-        bottom: 14%;
+        bottom: 16%;
         left: 10%;
     }
     .schedule-nav {
@@ -317,11 +317,11 @@ transition: all 0.35s;
         left: 53%;
     }
     .about-us-nav {
-        bottom: 21%;
+        bottom: 25%;
         left: 53%;
     }
     .proshows-nav {
-        bottom: 14%;
+        bottom: 16%;
         right: 12%;
     }
     
@@ -335,7 +335,7 @@ transition: all 0.35s;
         overflow-y: hidden;
     }
     .landing-logo {
-        bottom: 50%;
+        bottom: 40%;
         width: 40%;
     }
     .go-live-nav {
@@ -343,11 +343,11 @@ transition: all 0.35s;
         right: 54%;
     }
     .sponsors-nav {
-        bottom: 21%;
+        bottom: 25%;
         right: 54%;
     }
     .events-nav {
-        bottom: 14%;
+        bottom: 16%;
         left: 5%;
     }
     .schedule-nav {
@@ -355,11 +355,11 @@ transition: all 0.35s;
         left: 53%;
     }
     .about-us-nav {
-        bottom: 21%;
+        bottom: 25%;
         left: 53%;
     }
     .proshows-nav {
-        bottom: 14%;
+        bottom: 16%;
         right: 5%;
     }
 
