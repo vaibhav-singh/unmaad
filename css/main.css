@@ -297,31 +297,31 @@ transition: all 0.35s;
 
 @media screen and (max-width: 950px) {
     .landing-logo {
-        bottom: 45vh;
+        bottom: 50%;
         width: 25%;
     }
     .go-live-nav {
-        bottom: 12vh;
+        bottom: 7%;
         right: 54%;
     }
     .sponsors-nav {
-        bottom: 34vh;
+        bottom: 21%;
         right: 54%;
     }
     .events-nav {
-        bottom: 24vh;
+        bottom: 14%;
         left: 10%;
     }
     .schedule-nav {
-        bottom: 13vh;
+        bottom: 7%;
         left: 53%;
     }
     .about-us-nav {
-        bottom: 33vh;
+        bottom: 21%;
         left: 53%;
     }
     .proshows-nav {
-        bottom: 24vh;
+        bottom: 14%;
         right: 12%;
     }
     
