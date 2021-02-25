@@ -470,10 +470,10 @@ footer {
     filter: grayscale(100%);
  }
  
-.tv-inner:hover > .artist-name {
+/* .tv-inner:hover > .artist-name {
     opacity: 1;
  
-}
+} */
 .control {
     cursor: pointer;
     margin-left: 5px;
@@ -487,6 +487,10 @@ footer {
 
 .control.on > i {
     color: tomato;
+}
+
+.control.play-b > i {
+    font-size: 40px;
 }
 
 @keyframes fadeIn {

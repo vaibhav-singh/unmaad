@@ -58,11 +58,11 @@
                             <span>IIM-Bangalore</span>
                         </span>
                     </div>
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center align-items-center">
                         <span id="backward" class="control ">
                             <i class="fa fa-backward"></i>                        </span>
 
-                        <span id="poweroff" class="control">
+                        <span id="poweroff" class="control play-b">
                             <i class="fa fa-play-circle"></i>
                         </span>
                         <span id="forward" class="control forward">
@@ -79,7 +79,7 @@
     <footer>
         ©UNMAAD '21, IIM Bangalore - 560076
     </footer>
-    <audio id="myAudio">
+    <audio id="myAudio" autoplay>
         <source src="./pk.mp3" type="audio/mpeg">
     </audio>
 </section>
@@ -93,14 +93,20 @@
     $(document).ready(function () {
     setTimeout(function(){
         $('#preloader').fadeOut(500);
+        // var x = document.getElementById("myAudio"); 
+        // $("#artist-name").css('opacity', '1');
+        // x.play();
+        // $("#poweroff").toggleClass("on");
+        // $("#tv-inner").toggleClass("gray-scale");
     }, 1500);
+        
     });
-    $("#tv-inner").hover(function(){
-        if(!$("#poweroff").hasClass("on")) {
-            $("#tv-inner").toggleClass("gray-scale");
-        }
+    // $("#tv-inner").hover(function(){
+    //     if(!$("#poweroff").hasClass("on")) {
+    //         $("#tv-inner").toggleClass("gray-scale");
+    //     }
   
-    })
+    // })
     $("#poweroff").click(function() {
         var x = document.getElementById("myAudio"); 
 
