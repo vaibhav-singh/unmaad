@@ -366,6 +366,44 @@ transition: all 0.35s;
 
 }
 
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .landing-logo {
+        bottom: 44%;
+        width: 25%;
+    }
+    .go-live-nav {
+        bottom: 7%;
+        right: 54%;
+    }
+    .sponsors-nav {
+        bottom: 25%;
+        right: 54%;
+    }
+    .events-nav {
+        bottom: 16%;
+        left: 25%;
+    }
+    .schedule-nav {
+        bottom: 7%;
+        left: 53%;
+    }
+    .about-us-nav {
+        bottom: 25%;
+        left: 53%;
+    }
+    .proshows-nav {
+        bottom: 16%;
+        right: 26%;
+    }
+    
+    .landing-wrapper {
+        overflow-y: hidden;
+    }
+  }
+
 /* iPad Pro media query */
 
 @media only screen 
@@ -374,21 +412,21 @@ transition: all 0.35s;
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 2) {
     .landing-logo {
-        bottom: 40%;
+        bottom: 45%;
         width: 40%;
     }
 
     .go-live-nav {
         bottom: 16%;
-        right: 70%;
+        right: 64%;
     }
     .sponsors-nav {
         bottom: 25%;
-        right: 70%;
+        right: 64%;
     }
     .events-nav {
         bottom: 7%;
-        left: 15%;
+        left: 22%;
     }
     .schedule-nav {
         bottom: 7%;
@@ -404,3 +442,4 @@ transition: all 0.35s;
     }
 
 }
+
