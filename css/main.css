@@ -159,6 +159,14 @@ body {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #000;    
 }
+
+.go-live {
+    bottom: 5vh;
+    right: 28%;
+    color: whitesmoke;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;   
+}
 .sponsors-nav {
     bottom: 30vh;
     right: 28%;
@@ -304,6 +312,10 @@ transition: all 0.35s;
         bottom: 7%;
         right: 54%;
     }
+    .go-live {
+        bottom: 31%;
+        right: 54%;
+    }
     .sponsors-nav {
         bottom: 25%;
         right: 54%;
@@ -342,6 +354,10 @@ transition: all 0.35s;
         bottom: 7%;
         right: 54%;
     }
+    .go-live {
+        bottom: 31%;
+        right: 54%;
+    }
     .sponsors-nav {
         bottom: 25%;
         right: 54%;
@@ -376,6 +392,10 @@ transition: all 0.35s;
     }
     .go-live-nav {
         bottom: 7%;
+        right: 54%;
+    }
+    .go-live {
+        bottom: 31%;
         right: 54%;
     }
     .sponsors-nav {
@@ -418,6 +438,10 @@ transition: all 0.35s;
 
     .go-live-nav {
         bottom: 16%;
+        right: 64%;
+    }
+    .go-live {
+        bottom: 31%;
         right: 64%;
     }
     .sponsors-nav {
