@@ -283,6 +283,10 @@ footer {
 
 }
 
+.item-oc {
+    width: 100%
+}
+
 .preloader {
     position: absolute;
     top: 0;
