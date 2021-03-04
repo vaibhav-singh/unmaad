@@ -53,8 +53,8 @@
                 <div class="tv">
                     <div id="tv-inner" class="tv-inner d-flex gray-scale">
                         <span id="artist-name" class="artist-name">
-                            <span class="name">Prateek Kuhad</span><br>
-                            <span>7 March 2021</span><br>
+                            <span class="name" id="a-name">Prateek Kuhad</span><br>
+                            <span id="date">7 March 2021</span><br>
                             <span>IIM-Bangalore</span>
                         </span>
                     </div>
@@ -89,7 +89,9 @@
 <script src="https://use.fontawesome.com/eb6da44754.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script type="text/javascript">
-
+    var artists = ['url(images/pk.jpg)','url(images/WCMT.jpg)','url(images/kg.jpg)']
+    var artistsDetails = [{name: 'Prateek Kuhad', date: '7 March 2021'}, {name: 'When Chai Met Toast', date: '7 March 2021'}, {name: 'Kanan Gill', date: '5 March 2021'}]
+    var currentIndex = 0;
     $(document).ready(function () {
     setTimeout(function(){
         $('#preloader').fadeOut(500);
@@ -101,14 +103,43 @@
     }, 1500);
         
     });
-    // $("#tv-inner").hover(function(){
-    //     if(!$("#poweroff").hasClass("on")) {
-    //         $("#tv-inner").toggleClass("gray-scale");
-    //     }
-  
-    // })
-    $("#poweroff").click(function() {
+    
+    $("#backward").click(function() {
         var x = document.getElementById("myAudio"); 
+        x.pause();
+        $("#poweroff").removeClass("on");
+
+        if(currentIndex == 0) {
+            currentIndex = 2
+        }
+        else {
+            currentIndex -= 1
+
+        }
+        $('#tv-inner').css('background-image', artists[currentIndex]);
+        $('#a-name').text(artistsDetails[currentIndex].name)
+        $('#date').text(artistsDetails[currentIndex].date)
+    })
+
+    $("#forward").click(function() {
+        var x = document.getElementById("myAudio"); 
+        x.pause();
+        $("#poweroff").removeClass("on");
+
+        if(currentIndex==2) {
+            currentIndex = 0
+        }
+        else {
+            currentIndex += 1
+        }
+        $('#tv-inner').css('background-image', artists[currentIndex]);
+        $('#a-name').text(artistsDetails[currentIndex].name)
+        $('#date').text(artistsDetails[currentIndex].date)
+    })
+
+    $("#poweroff").click(function() {
+        if(currentIndex==0) {
+            var x = document.getElementById("myAudio"); 
 
         if(!$("#poweroff").hasClass("on")) {
             $("#artist-name").css('opacity', '1');
@@ -118,6 +149,17 @@
             x.pause();
             $("#artist-name").css('opacity', '0');
         }
+        }
+        // var x = document.getElementById("myAudio"); 
+
+        // if(!$("#poweroff").hasClass("on")) {
+        //     $("#artist-name").css('opacity', '1');
+        //     x.play();
+        // }
+        // else {
+        //     x.pause();
+        //     $("#artist-name").css('opacity', '0');
+        // }
         
         $("#poweroff").toggleClass("on");
         $("#tv-inner").toggleClass("gray-scale");
