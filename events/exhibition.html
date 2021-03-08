@@ -1,103 +1,163 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
-
+<html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Unmaad 2021 - Happiness Reloaded</title>
-    <meta name="description" content="Unmaad is the annual Cultural fest of IIM Bangalore. This year's theme is the 'Happiness Reloaded'">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet " href="./main.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel='icon' href='../img/favicon.ico' type='image/x-icon' />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Unmaad 2021 - Exhibition</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Paytone+One&display=swap" rel="stylesheet">
     <style>
-        .carousel-inner img {
-            margin: auto;
-            max-width: 100%;
+       
+    .photo-gallery {
+        font-family: 'Luckiest Guy', cursive;
+        color:white;
+        background-image: url('../about-us/img/sky.png');
+        text-shadow: 3px 4px 7px rgb(81 67 21 / 80%);
         }
+
+.photo-gallery p {
+  color:#7d8285;
+}
+
+.photo-gallery h2 {
+  font-weight:bold;
+  margin-bottom:40px;
+  padding-top:40px;
+  color:inherit;
+}
+
+@media (max-width:767px) {
+  .photo-gallery h2 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+}
+
+.photo-gallery .intro {
+  font-size:16px;
+  max-width:500px;
+  margin:0 auto 40px;
+}
+
+.photo-gallery .intro p {
+  margin-bottom:0;
+}
+
+.photo-gallery .photos {
+  padding-bottom:20px;
+}
+
+.photo-gallery .item {
+  padding-bottom:30px;
+}
     </style>
 </head>
+
 <body>
-    <div id="preloader" class="preloader"></div>
+    <div class="photo-gallery">
+        <div class="container">
+            <div class="intro text-center" style="padding-top: 40px;">
+                <a href="./../index.html"><img class="nav-logo" style="filter: drop-shadow(5px 5px 5px #000000);" src="../img/Logo21/LogoBright.png" width="200px"/></a>
+            </div>
+            <div class="intro">
+                <h2 class="text-center">Unmaad'21 Exhibition</h2>
+            </div>
 
-    <div class="container">
-	
-        <div class="header">
-            <a class="back-link" href="./../index.html"><i class="fa back-arrow fa-arrow-circle-o-left" aria-hidden="true"></i></a>
-            <a href="./../index.html"><img class="nav-logo" src="../img/Logo21/LogoBright.png" width="200px"/></a>
-            <span class="category-header">Fashion & Fine Arts Exhibition</span>
-        </div>
-        
-        <div class="bird-container bird-container--one">
-            <div class="bird bird--one"></div>
-        </div>
-        
-        <div class="bird-container bird-container--two">
-            <div class="bird bird--two"></div>
-        </div>
-        
-        <div class="bird-container bird-container--three">
-            <div class="bird bird--three"></div>
-        </div>
-        
-        <div class="bird-container bird-container--four">
-            <div class="bird bird--four"></div>
-        </div>
-        
-        <div class="container-fluid">
-            
-                    
-        <h2>Chef's Hat</h2>
+            <div class="intro">
+                <h2 class="text-center"><img width="100px" style="margin-right: 10px;" src="https://firebasestorage.googleapis.com/v0/b/unmaad-e6971.appspot.com/o/sponsors%2FAmul%20Logo.jpg?alt=media&token=94fb0d99-b80b-48df-aefa-543b22e20c76"><br><span style="font-size: 12px;">presents</span><br>
+                    &nbsp;Chef's Hat</h2>
+            </div>
+            <div class="row photos">
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="./images/ChefsHat/1.PNG" data-lightbox="photos"><img class="img-fluid" src="./images/ChefsHat/1.PNG"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="./images/ChefsHat/2.PNG" data-lightbox="photos"><img class="img-fluid" src="./images/ChefsHat/2.PNG"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="./images/ChefsHat/3.PNG" data-lightbox="photos"><img class="img-fluid" src="./images/ChefsHat/3.PNG"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="./images/ChefsHat/4.PNG" data-lightbox="photos"><img class="img-fluid" src="./images/ChefsHat/4.PNG"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="./images/ChefsHat/5.PNG" data-lightbox="photos"><img class="img-fluid" src="./images/ChefsHat/5.PNG"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="./images/ChefsHat/6.PNG" data-lightbox="photos"><img class="img-fluid" src="./images/ChefsHat/6.PNG"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="./images/ChefsHat/7.PNG" data-lightbox="photos"><img class="img-fluid" src="./images/ChefsHat/7.PNG"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="./images/ChefsHat/8.PNG" data-lightbox="photos"><img class="img-fluid" src="./images/ChefsHat/8.PNG"></a></div>
+            </div>
 
-        
 
-        <h2>Get,Set,Create</h2>
+            <div class="intro">
+                <h2 class="text-center">Blend It Like Beckham</h2>
+            </div>
 
-        
+            <div class="row photos">
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/BlendIt/1 - Copy.jpg" data-lightbox="photos"><img class="img-fluid" src="./images/BlendIt/1 - Copy.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/BlendIt/1.jpg" data-lightbox="photos"><img class="img-fluid" src="./images/BlendIt/1.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/BlendIt/2.jpg" data-lightbox="photos"><img class="img-fluid" src="./images/BlendIt/2.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/BlendIt/3.jpg" data-lightbox="photos"><img class="img-fluid" src="./images/BlendIt/3.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/BlendIt/4.jpg" data-lightbox="photos"><img class="img-fluid" src="./images/BlendIt/4.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/BlendIt/5.jpg" data-lightbox="photos"><img class="img-fluid" src="./images/BlendIt/5.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/BlendIt/a.jpg" data-lightbox="photos"><img class="img-fluid" src="./images/BlendIt/a.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/BlendIt/b.JPG" data-lightbox="photos"><img class="img-fluid" src="./images/BlendIt/b.JPG"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/BlendIt/PRIYANKA JAISWAL_BLEND IT LIKE BECKHAM.png" data-lightbox="photos"><img class="img-fluid" src="./images/BlendIt/PRIYANKA JAISWAL_BLEND IT LIKE BECKHAM.png"></a></div>
 
-        <h2>Blend It Like Beckham</h2>
+            </div>
 
-        
+            <div class="intro">
+                <h2 class="text-center">Get. Set. Create.</h2>
+            </div>
 
-        <h2>Goody-Two-Shoes</h2>
+            <div class="row photos">
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/GetSetCreate/1.jpg" data-lightbox="photos"><img class="img-fluid" src="./images/GetSetCreate/1.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/GetSetCreate/2.jpg" data-lightbox="photos"><img class="img-fluid" src="./images/GetSetCreate/2.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/GetSetCreate/3.jpg" data-lightbox="photos"><img class="img-fluid" src="./images/GetSetCreate/3.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/GetSetCreate/4.jpg" data-lightbox="photos"><img class="img-fluid" src="./images/GetSetCreate/4.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/GetSetCreate/5.jpg" data-lightbox="photos"><img class="img-fluid" src="./images/GetSetCreate/5.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/GetSetCreate/6.jpg" data-lightbox="photos"><img class="img-fluid" src="./images/GetSetCreate/6.jpg"></a></div>
+               
+            </div>
 
-        
+            <div class="intro">
+                <h2 class="text-center">Goody-Two-Shoes</h2>
+            </div>
 
-        <h2>Weave A Tale</h2>
+            <div class="row photos">
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/GoodyTwoShoes/1.PNG" data-lightbox="photos"><img class="img-fluid" src="./images/GoodyTwoShoes/1.PNG"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/GoodyTwoShoes/2.PNG" data-lightbox="photos"><img class="img-fluid" src="./images/GoodyTwoShoes/2.PNG"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/GoodyTwoShoes/3.PNG" data-lightbox="photos"><img class="img-fluid" src="./images/GoodyTwoShoes/3.PNG"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/GoodyTwoShoes/5.PNG" data-lightbox="photos"><img class="img-fluid" src="./images/GoodyTwoShoes/5.PNG"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/GoodyTwoShoes/7.PNG" data-lightbox="photos"><img class="img-fluid" src="./images/GoodyTwoShoes/7.PNG"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/GoodyTwoShoes/8.PNG" data-lightbox="photos"><img class="img-fluid" src="./images/GoodyTwoShoes/8.PNG"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/GoodyTwoShoes/9.PNG" data-lightbox="photos"><img class="img-fluid" src="./images/GoodyTwoShoes/9.PNG"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/GoodyTwoShoes/10.PNG" data-lightbox="photos"><img class="img-fluid" src="./images/GoodyTwoShoes/10.PNG"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/GoodyTwoShoes/11.PNG" data-lightbox="photos"><img class="img-fluid" src="./images/GoodyTwoShoes/11.PNG"></a></div>
 
-        
-            
+            </div>
+
+
+            <div class="intro">
+                <h2 class="text-center">Weave A Tale</h2>
+            </div>
+
+            <div class="row photos">
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/WeaveATale/1.PNG" data-lightbox="photos"><img class="img-fluid" src="./images/WeaveATale/1.PNG"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/WeaveATale/2.PNG" data-lightbox="photos"><img class="img-fluid" src="./images/WeaveATale/2.PNG"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/WeaveATale/3.PNG" data-lightbox="photos"><img class="img-fluid" src="./images/WeaveATale/3.PNG"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/WeaveATale/10.PNG" data-lightbox="photos"><img class="img-fluid" src="./images/WeaveATale/10.PNG"></a></div>
+
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/WeaveATale/6.PNG" data-lightbox="photos"><img class="img-fluid" src="./images/WeaveATale/6.PNG"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/WeaveATale/7.PNG" data-lightbox="photos"><img class="img-fluid" src="./images/WeaveATale/7.PNG"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/WeaveATale/8.PNG" data-lightbox="photos"><img class="img-fluid" src="./images/WeaveATale/8.PNG"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/WeaveATale/9.PNG" data-lightbox="photos"><img class="img-fluid" src="./images/WeaveATale/9.PNG"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="./images/WeaveATale/5.PNG" data-lightbox="photos"><img class="img-fluid" src="./images/WeaveATale/5.PNG"></a></div>
+
+            </div>
         </div>
     </div>
-    <footer>
+    <footer class="text-center" style="padding-top: 30px; padding-bottom: 30px">
         ©UNMAAD '21, IIM Bangalore - 560076
     </footer>
-</section>
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
 <script src="https://use.fontawesome.com/eb6da44754.js"></script>
-
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-    setTimeout(function(){
-        $('#preloader').fadeOut(500);
-    }, 1500);
-});
-</script>
 </body>
-</html>
 
+</html>
